@@ -19,7 +19,7 @@
 <link rel="dns-prefetch" href="https://maps.google.com">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bed08a364b","applicationID":"16192845","transactionName":"Jg1fEkIMXl4HQU0VWwQBVBUfEFpdFQ==","queueTime":0,"applicationTime":14,"agent":""}</script>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bed08a364b","applicationID":"16192845","transactionName":"Jg1fEkIMXl4HQU0VWwQBVBUfEFpdFQ==","queueTime":0,"applicationTime":173,"agent":""}</script>
 <script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VQUHVVJSCRABUlBbBQkDUw==",licenseKey:"bed08a364b",applicationID:"16192845"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="fb:app_id" content="206394544492" />
@@ -113,10 +113,10 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
     'user_id': ao_id_token,
     'dimension1': 'Guest',
     'optimize_id': 'GTM-5KQHXR9',
-    'dimension7': 'renaissance;architecture;stairs;palaces',    
+    'dimension7': 'restaurants;antiquities;presidents;literature;shops',    
   });
 </script>
-<link rel="canonical" href="https://www.atlasobscura.com/places/scala-contarini-del-bovolo">
+<link rel="canonical" href="https://www.atlasobscura.com/places/keen-s-steakhouse">
 <script>
         var _rollbarConfig = {
             accessToken: "5507e5a8c1914a67905c8eda464cca35",
@@ -150,9 +150,9 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
         });
       </script>
 <title>
-      Scala Contarini del Bovolo – Venice, Italy
+      Keen&#39;s Steakhouse – New York, New York
  - Atlas Obscura</title>
-<meta name="description" content="The winding stairwell was unique the name &quot;snail&quot; was given to the noble family who built it. " />
+<meta name="description" content="Discover Keen&#39;s Steakhouse in New York, New York: Everyone from Mark Twain to Teddy Roosevelt has a pipe hanging from the walls of this historic chophouse." />
 <script>
       window.AtlasObscuraOptimize = {};
     </script>
@@ -173,7 +173,7 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
       lazySizesConfig.loadMode = 1;
     </script>
 <script>
-        AtlasObscura.current_place = {"id":25425,"title":"Scala Contarini del Bovolo","subtitle":"This palatial spiral staircase was so unusual the name \"snail\" was given to the noble family who built it.  ","city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/scala-contarini-del-bovolo","hide_from_maps":"false","physical_status":"","thumbnail_url":"https://img.atlasobscura.com/mcOCkRi12T2v_AEcs6YTAm-vWC93uvbiHhXSqzsGCpA/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg","thumbnail_url_3x2":"https://img.atlasobscura.com/pFqGFewAUQrMBAiMJox5Xs7L3kZsvXehLpFk-i9Reps/rs:fill:204:136:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg","coordinates":{"lat":45.434824,"lng":12.334615},"nearby_places":[{"id":2824,"title":"St. Mark's Clock Tower (Torre dell'Orologio)","subtitle":"Go inside to really appreciate this 500-year-old technological masterpiece.","distance":0.2084587533431622,"city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/torre-dell-orologio-venice-clock-tower","thumbnail_url":"https://img.atlasobscura.com/4u15zaWlcY6ZvmlcNWbq5gCBh2rhOSQ0BT9fetKo5IA/rs:fill:200:200:1/g:ce/c:656:437:nowe:117:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMWIx/MDZiNDFhMzE4ZmYz/NDBjY2MwNmZmYWU5/MzkxODRkMGUzMTgz/LmpwZw.jpg","physical_status":"","coordinates":{"lat":45.434702,"lng":12.338911}},{"id":30226,"title":"Monument to Niccolò Tommaseo","subtitle":"The pile of books behind the dignified writer gave the statue a most undignified nickname.","distance":0.22989814344257287,"city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/monument-to-niccolo-tommaseo","thumbnail_url":"https://img.atlasobscura.com/3PeFprFDaWgJehQ7SaPUr6TcoUEc9pn0hGzq1ySaz30/rs:fill:200:200:1/g:ce/c:1359:906:nowe:0:1/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82OTkw/NzdhZi00MDNmLTRj/YWUtYjU5OC1mNmNi/ZjUwM2I3ZmE1YWYx/NDE4NjI2ZDcyNTJk/MWNfOTkxOV8tX1Zl/bmV6aWFfLV9GcmFu/Y2VzY29fQmFyemFn/aGlfKDE4MzktMTg5/MilfLV9Nb251bWVu/dG9fYV9Ub21tYXNl/b18tMTg4Mi1fLV9G/b3RvX0dpb3Zhbm5p/X0RhbGwnT3J0byxf/MTItQXVnLTIwMDcu/anBn.jpg","physical_status":"","coordinates":{"lat":45.433273,"lng":12.33042}},{"id":24348,"title":"St. Mark's Lost Third Column","subtitle":"Two stone columns flank the grand Venice square, but there were supposed to be three.","distance":0.23962188597616518,"city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/st-marks-lost-third-column","thumbnail_url":"https://img.atlasobscura.com/0pxrqVKvH4KqmNUG7WDg6UJHD_9xHZ9lrugMgITN-ns/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NGIw/ZGNjNTgyYmJkMmM4/Y2RfVmVuZXppYV9w/aWF6emFfcy5NYXJj/b18yLmpwZWc.jpg","physical_status":"","coordinates":{"lat":45.432977,"lng":12.338798}},{"id":25843,"title":"Portrait of the Four Tetrarchs","subtitle":"This Roman statue is missing a limb from when the Venetians stole it from Constantinople during the Crusades.","distance":0.24784505828977815,"city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/portrait-of-the-four-tetrarchs","thumbnail_url":"https://img.atlasobscura.com/LFrFXME4w2WeYVcV5pLH3wKyvoNVsFWXej39YmVeSlc/rs:fill:200:200:1/g:ce/c:3456:2304:nowe:0:392/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wYzE1/MDkyNGI1ZTk0OTg5/ZmVfcDIuanBn.jpg","physical_status":"","coordinates":{"lat":45.43456,"lng":12.339713}},{"id":11039,"title":"Reliquaries of St Mark's Basilica Treasury","subtitle":"An extensive collection of reliquaries containing the bones of saints housed in the largest Catholic church in Venice.","distance":0.25479852098766803,"city":"Venice","country":"Italy","location":"Venice, Italy","url":"https://www.atlasobscura.com/places/reliquaries-of-st-marks-basilica-treasury","thumbnail_url":"https://img.atlasobscura.com/l2LInPBsDYxVf2nm6wKpH6JDkAp3yGViH-tmwc3FIyE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMGYz/NmQ3NjJmYzRmNThi/YzVfMTQ2MzU3M18x/MDE1MTk4NTg1NjU5/MzIyMV83OTA4NTgz/MjNfbi5qcGc.jpg","physical_status":"","coordinates":{"lat":45.434562,"lng":12.339857}}],"nearby_foods":[{"id":660,"title":"Sarde in Saor","content_location_title":"Cantina Do Spade","subtitle":"Venetians celebrate the end of a 16th-century plague with sweet and sour sardines.","distance":0.26265541690862787,"city":"Venice","country":"Italy","thing_type":"Food","location":"Venice, Italy","url":"/foods/sweet-and-sour-sardines-sarde-in-saor","thumbnail_url":"https://img.atlasobscura.com/yYcM9zVQ5_OoCA9lTuDHap_AeKn-UZplQ7RIfqlRv_M/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy83NTM4/ZDhkYy0yZTBjLTQ4/NzctYmM0MC0yY2E2/MmFkNTk5NWQxZDlj/N2IzNWY3ZjFiMzcx/NzNfU2FyZGVpblNh/b3JfUuKYvFfOtW7O/sS5qcGc.jpg","physical_status":"","coordinates":{"lat":45.437213,"lng":12.330401}},{"id":660,"title":"Sarde in Saor","content_location_title":"Trattoria da GiGio","subtitle":"Venetians celebrate the end of a 16th-century plague with sweet and sour sardines.","distance":0.709409448395261,"city":"Venice","country":"Italy","thing_type":"Food","location":"Venice, Italy","url":"/foods/sweet-and-sour-sardines-sarde-in-saor","thumbnail_url":"https://img.atlasobscura.com/yYcM9zVQ5_OoCA9lTuDHap_AeKn-UZplQ7RIfqlRv_M/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy83NTM4/ZDhkYy0yZTBjLTQ4/NzctYmM0MC0yY2E2/MmFkNTk5NWQxZDlj/N2IzNWY3ZjFiMzcx/NzNfU2FyZGVpblNh/b3JfUuKYvFfOtW7O/sS5qcGc.jpg","physical_status":"","coordinates":{"lat":45.443745,"lng":12.327371}}]};
+        AtlasObscura.current_place = {"id":10394,"title":"Keen's Steakhouse","subtitle":"Everyone from Mark Twain to Teddy Roosevelt has a pipe hanging from the walls of this historic chophouse.","city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/keen-s-steakhouse","hide_from_maps":"false","physical_status":"","thumbnail_url":"https://img.atlasobscura.com/yJhGWYTF2RdIdzPR0EWGm7TOGk-p6lYsNvxLYH108aw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg","thumbnail_url_3x2":"https://img.atlasobscura.com/aAcVRrJEMy7FXjcJhBnTgEmTuUJvoHNUY6yDteHPThc/rs:fill:204:136:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg","coordinates":{"lat":40.750674,"lng":-73.986689},"nearby_places":[{"id":13569,"title":"REACH: New York","subtitle":"Hidden in plain sight on a pair of Manhattan subway tunnels are a pair of public instruments that sing to each other.","distance":0.05293549183415106,"city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/reach-new-york","thumbnail_url":"https://img.atlasobscura.com/p9Ge-XstAT3_eaWJNW0e247wKVUQRWf92zZ2wsyP9dc/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jYjNm/NmIzZTNjNDA2ZTgw/ZjBfSU1HXzI2MzYu/anBn.jpg","physical_status":"","coordinates":{"lat":40.750382,"lng":-73.987624}},{"id":10395,"title":"New York Herald Monument","subtitle":"There are owls with glowing eyes in Herald Square.","distance":0.05435318265523734,"city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/the-new-york-herald-monument-new-york-new-york","thumbnail_url":"https://img.atlasobscura.com/ijdYowotjRXwi-9j1SISCPVeDqsdVKfaRZyuRBWXopU/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kZWUz/ZDc2NTA0NGU0NmFl/NDFfSU1HXzE1NTEu/SlBH.jpg","physical_status":"","coordinates":{"lat":40.750321,"lng":-73.987617}},{"id":6409,"title":"Tannen's Magic Shop","subtitle":"New York's oldest magic store.","distance":0.067411735273199,"city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/tannen-s-magic-store","thumbnail_url":"https://img.atlasobscura.com/415esxHrr-UBjdg8DsGpRWsLA0YjwKajgwvnCiu3I_Q/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YjFi/ZThiOWQ0YTMzNWE0/OWRkYWRkMzU3YjUx/ZjYyYklNR182MDc0/LkpQRw.jpg","physical_status":"","coordinates":{"lat":40.749715,"lng":-73.986926}},{"id":18598,"title":"Macy's Wooden Escalators","subtitle":"A bit of retro transportation flair preserved in the world's largest department store.","distance":0.148718204646931,"city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/macys-wooden-escalators","thumbnail_url":"https://img.atlasobscura.com/3gt7wIAWdja5HpYpl0JHdQ9oe2r639jQoznA9-3OZVE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84MmVl/NjZkNDMwMjA0Mjc3/ZjBfMjEyMTIyNzgz/MV8xYWJhNTkzMGJk/X2IuanBn.jpg","physical_status":"","coordinates":{"lat":40.750792,"lng":-73.989526}},{"id":10134,"title":"Gimbel's Bridge","subtitle":"A three-story copper skybridge connects two Manhattan buildings with Art Deco luxury.","distance":0.19338311007817477,"city":"New York","country":"United States","location":"New York, New York","url":"https://www.atlasobscura.com/places/gimbel-s-bridge","thumbnail_url":"https://img.atlasobscura.com/wPtWpBgDBGQZvVZfo7nh1uwfMOW-hvYRnHYpXn96nRs/rs:fill:200:200:1/g:ce/c:600:400:nowe:0:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hODM1/MGFhOTE3NjQ3ZGU2/MDRfNDMxNTM0Mzk0/MV9lYzgwZWM0OGFj/X3ouanBn.jpg","physical_status":"","coordinates":{"lat":40.748882,"lng":-73.989527}}],"nearby_foods":[{"id":350,"title":"Job's Tears Tea","content_location_title":"H-Mart","subtitle":"South Koreans turned this simple grain into a nutty energy drink.","distance":0.20340024157871067,"city":"New York","country":"United States","thing_type":"Food","location":"New York, New York","url":"/foods/jobs-tears-tea-south-korea","thumbnail_url":"https://img.atlasobscura.com/2xGnsUXewZLrw78uX_3k9tpd-1WmaLu4wmBXyw1K25U/rs:fill:200:200:1/g:ce/c:1180:1180:nowe:12:3/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy9iNWZi/YTg5NDU0MzZlYTNj/MGRfam9ic3RlYXJz/My5wbmc.png","physical_status":"","coordinates":{"lat":40.747783,"lng":-73.987422}},{"id":332,"title":"Makgeolli","content_location_title":"Take 31","subtitle":"South Korea's oldest alcoholic beverage is making a comeback.","distance":0.3188189302945173,"city":"New York","country":"United States","thing_type":"Food","location":"New York, New York","url":"/foods/makgeolli-south-korea","thumbnail_url":"https://img.atlasobscura.com/MwYdwwD7tgVgsIwv8_tfOvbkskS31MFHB52eYmmmHiw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy84YWY2/OTBjYjlmMmUyMmQy/YThfTWFrZ2VvbGxp/X1NodXR0ZXJzdG9j/ay5qcGc.jpg","physical_status":"","coordinates":{"lat":40.746284,"lng":-73.984813}},{"id":2108,"title":"Jjajang Myeon","content_location_title":"Hanjan","subtitle":"On April 14, lonely South Korean singles are encouraged to drown their sorrows in black noodles.","distance":0.48964221677519454,"city":"New York","country":"United States","thing_type":"Food","location":"New York, New York","url":"/foods/jjajang-myeon-black-noodles-singles-day","thumbnail_url":"https://img.atlasobscura.com/hgApviv8_wma8tzwVCjTsTVEcQ9uWbeGFk6zmQ1Wk0Y/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy8zYTI5/Zjg2Ni0yMGQwLTQy/MjMtYTExNC1kZGU5/MjdlN2M3OTYzNGI4/ZTA5M2ZkMjRhNTE1/M2ZfSmphamFuZ015/ZW9uX2FtZ2VuY2lh/bmEuanBn.jpg","physical_status":"","coordinates":{"lat":40.744241,"lng":-73.990613}},{"id":255,"title":"Paan","content_location_title":"Lucky Paan","subtitle":"This chewable Indian digestive soothes stomachs, freshens breath, and might give you cancer.","distance":0.5763057178873127,"city":"New York","country":"United States","thing_type":"Food","location":"New York, New York","url":"/foods/paan-india","thumbnail_url":"https://img.atlasobscura.com/-BsAJKxaZOBmp58JUyQ8JmEj6qjvjj2doNSkndAbyVQ/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy8wNDZh/YWMyMTM4MTQzMzY1/MDlfcGFhbjIuanBn.jpg","physical_status":"","coordinates":{"lat":40.742893,"lng":-73.982723}},{"id":1514,"title":"Port Tongs","content_location_title":"Eleven Madison Park","subtitle":"Sabering champagne doesn’t hold a candle to this method of cracking open wine bottles with red-hot iron.","distance":0.606869438075056,"city":"New York","country":"United States","thing_type":"Food","location":"New York, New York","url":"/foods/port-tongs","thumbnail_url":"https://img.atlasobscura.com/5NJJqWAoReRbn7SqDuhGRyWgHH1Kz31zqazzOhhq7Io/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3RoaW5n/X2ltYWdlcy8wNDdj/M2FiYS0wY2FlLTQ3/ZDItYTU4ZC1jZDg3/OGQ3YzY4ZTdkYjcy/ZGI0ODkxZmM3Mjhl/NmVfcG9ydG9uZ3Mu/anBn.jpg","physical_status":"","coordinates":{"lat":40.741893,"lng":-73.986956}}]};
         AtlasObscura.is_sensitive = false;
   </script>
 <script src="https://assets.atlasobscura.com/assets/application-42613e9090d8846e0e4d7fb121c0fd586413732304fe7bebc92b92b220ec2740.js"></script>
@@ -191,12 +191,12 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
             htlbid.setTargeting('is_home', 'NO');
             htlbid.layout("place");
             htlbid.setTargeting("page", "place")
-            htlbid.setTargeting("post_id", "place-25425")
-            htlbid.setTargeting("pid", "place-25425")
-            htlbid.setTargeting("tags", ["renaissance", "architecture", "stairs", "palaces"])
-              htlbid.setTargeting("city", "Venice")
-              htlbid.setTargeting("state", "Veneto")
-              htlbid.setTargeting("country", "Italy");
+            htlbid.setTargeting("post_id", "place-10394")
+            htlbid.setTargeting("pid", "place-10394")
+            htlbid.setTargeting("tags", ["restaurants", "antiquities", "presidents", "literature", "shops"])
+              htlbid.setTargeting("city", "New York")
+              htlbid.setTargeting("state", "New York")
+              htlbid.setTargeting("country", "United States");
           });
         </script>
 <script type="text/javascript">
@@ -212,22 +212,22 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
 
       });
     </script>
-<meta name="apple-itunes-app" content=app-id=1563250221, app-argument=https://atlasobscura.herokuapp.com/places/25425>
-<meta property="og:description" content="The winding stairwell was unique the name &quot;snail&quot; was given to the noble family who built it. ">
-<meta property="og:title" content="The Famous Spiral Staircase Hidden in Venice" />
-<meta property="og:url" content="http://www.atlasobscura.com/places/scala-contarini-del-bovolo" />
-<meta property="og:image" content="https://img.atlasobscura.com/8v2j_tW3lFkV4MQ8j35VOHKwnWPQHZ-RzFl7BjSbwVE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" />
-<meta property="twitter:image" content="https://img.atlasobscura.com/8v2j_tW3lFkV4MQ8j35VOHKwnWPQHZ-RzFl7BjSbwVE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" />
+<meta name="apple-itunes-app" content=app-id=1563250221, app-argument=https://www.atlasobscura.com/places/10394>
+<meta property="og:description" content="Everyone from Mark Twain to Teddy Roosevelt has a pipe hanging from the walls of this historic chophouse.">
+<meta property="og:title" content="Keen&#39;s Steakhouse" />
+<meta property="og:url" content="http://www.atlasobscura.com/places/keen-s-steakhouse" />
+<meta property="og:image" content="https://img.atlasobscura.com/7lorOelpjHnuyrNSW8qALPKoLgXa4ZUpppewhP8v0QI/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" />
+<meta property="twitter:image" content="https://img.atlasobscura.com/7lorOelpjHnuyrNSW8qALPKoLgXa4ZUpppewhP8v0QI/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" />
 <meta property="og:type" content="place" />
-<meta property="place:location:latitude" content="45.434824" />
-<meta property="place:location:longitude" content="12.334615" />
-<meta property="og:latitude" content="45.434824" />
-<meta property="og:longitude" content="12.334615" />
-<meta property="atlasobscura:location:latitude" content="45.434824" />
-<meta property="atlasobscura:location:longitude" content="12.334615" />
+<meta property="place:location:latitude" content="40.750674" />
+<meta property="place:location:longitude" content="-73.986689" />
+<meta property="og:latitude" content="40.750674" />
+<meta property="og:longitude" content="-73.986689" />
+<meta property="atlasobscura:location:latitude" content="40.750674" />
+<meta property="atlasobscura:location:longitude" content="-73.986689" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@atlasobscura">
-<meta name="parsely-pub-date" content="2018-02-15T17:00:00+00:00" />
+<meta name="parsely-pub-date" content="2014-03-20T05:00:00+00:00" />
 <script type="application/ld+json">
           {
             "publisher": {
@@ -243,22 +243,22 @@ src="https://www.facebook.com/tr?id=1494388927542275&ev=PageView&noscript=1"
             "@context": "https://schema.org",
             "@type": "NewsArticle",
             "additionalType": "Place",
-            "datePublished": "2018-02-15T17:00:00+00:00",
-            "dateModified": "2022-11-03T23:24:18+00:00",
-            "headline": "Scala Contarini del Bovolo",
-            "keywords": ["renaissance", "architecture", "stairs", "palaces", "section-Atlas"],
+            "datePublished": "2014-03-20T05:00:00+00:00",
+            "dateModified": "2022-11-03T17:19:10+00:00",
+            "headline": "Keen&#39;s Steakhouse",
+            "keywords": ["restaurants", "antiquities", "presidents", "literature", "shops", "section-Atlas"],
             "articleSection": "nil",
             "creator": "ugc",
             "author": "ugc",
-            "url": "https://www.atlasobscura.com/places/scala-contarini-del-bovolo",
-            "description": "This palatial spiral staircase was so unusual the name &quot;snail&quot; was given to the noble family who built it.  ",
+            "url": "https://www.atlasobscura.com/places/keen-s-steakhouse",
+            "description": "Everyone from Mark Twain to Teddy Roosevelt has a pipe hanging from the walls of this historic chophouse.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://img.atlasobscura.com/MlLewIwIOExfdUvJ_yofh9LyEtyQsrmBS7_pCvRLaK8/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg",
+              "url": "https://img.atlasobscura.com/jBQC8X4MBBVxipadYjkpRuYZFn0LRokIz512dYq89Y8/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg",
               "height": 520,
               "width": 780
             },
-            "thumbnailUrl": "https://img.atlasobscura.com/MlLewIwIOExfdUvJ_yofh9LyEtyQsrmBS7_pCvRLaK8/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg"
+            "thumbnailUrl": "https://img.atlasobscura.com/jBQC8X4MBBVxipadYjkpRuYZFn0LRokIz512dYq89Y8/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg"
           }
         </script>
 <script type="text/javascript">
@@ -417,7 +417,7 @@ Want to see fewer ads? <a class="" href="/membership">Become a Member</a>.
 <div class="row">
 <div class="col-md-3">
 <a class="nav-card" href="/unusual-trips/bhutan">
- <img data-src="https://img.atlasobscura.com/uDRO-34Dyqo20hFeAG2GEBRaM0kDygKP2PIc_gVZoaQ/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy8yMGVm/ZjY4Ny0xNTRiLTRm/OWQtYTdkNi1jNWRj/OTBhN2M0ZmQzODYw/MDIwY2ZiODY5YjE1/MzhfYmh1dGFuLW1h/c2tlZC1kYW5jZXIt/c2h1dHRlcnN0b2Nr/XzQwNDU0OTYwMi5q/cGc.jpg" alt="" data-width="1920" data-height="1280" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<img data-src="https://img.atlasobscura.com/uDRO-34Dyqo20hFeAG2GEBRaM0kDygKP2PIc_gVZoaQ/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy8yMGVm/ZjY4Ny0xNTRiLTRm/OWQtYTdkNi1jNWRj/OTBhN2M0ZmQzODYw/MDIwY2ZiODY5YjE1/MzhfYmh1dGFuLW1h/c2tlZC1kYW5jZXIt/c2h1dHRlcnN0b2Nr/XzQwNDU0OTYwMi5q/cGc.jpg" alt="" data-width="1920" data-height="1280" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
 <h3 class="title-sm nav-card-title">
 <span class="title-underline">Festivals and Mountaintop Temples of Bhutan</span>
 </h3>
@@ -471,7 +471,7 @@ Want to see fewer ads? <a class="" href="/membership">Become a Member</a>.
 <div class="Card__tag--overlay">Members only</div>
 </div>
 </div>
- <h3 class="title-sm nav-card-title">
+<h3 class="title-sm nav-card-title">
 <span class="title-underline">Monster of the Month w/ Colin Dickey: The Maryland Snallygaster</span>
 </h3>
 </a> <a class="col-md-3 nav-card" href="/experiences/antiques-and-their-afterlives">
@@ -527,7 +527,7 @@ Want to see fewer ads? <a class="" href="/membership">Become a Member</a>.
 <div class="row table-display">
 <div class="nav-full-panel">
 <div class="row">
-<div class="col-md-8">
+ <div class="col-md-8">
 <h4 class="nav-category-heading heading-md-non-uppercase">Upcoming Courses</h4>
 </div>
 <div class="col-md-4">
@@ -645,33 +645,33 @@ Add a Place
 </div>
 </div>
 <div class="row">
-<a class="col-md-3 nav-card" href="/places/mad-dog-morgan-grave">
-<img data-src="https://img.atlasobscura.com/scTkrMdj14cThILH_ILOAg2a2OZhgzzj1EloWl-hvLc/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zM2Zi/ZTBkOS01ZWY5LTRj/NWEtOTk5NS02ODA0/NDkxODhlMzQ3MWQx/YjEwMTZjNWU4ZjY0/NjhfODAwcHgtRGFu/X01vcmdhbl9ncmF2/ZS5qcGc.jpg" alt="Dan Morgans Grave" data-width="800" data-height="600" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<div class="detail-sm nav-card-location">Wangaratta, Australia</div>
-<h3 class="title-sm nav-card-title"><span class="title-underline">Grave of Daniel &quot;Mad Dog&quot; Morgan</span></h3>
+<a class="col-md-3 nav-card" href="/places/mazama-queen-mine">
+<img data-src="https://img.atlasobscura.com/P6Qac3IhDNwNd4Vvy6w84BGvrAAsn7ow0wFweDRN0g0/rs:fill:222:148:1/g:ce/c:3017:2011:nowe:0:1477/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hNDE4/ZjY1Zi02ODY4LTQ2/OWEtYTdhYy0yNzhk/ZTY3MDZiMmE1OGIw/ZTk1YWJkZTQyYTZm/OTJfMjAyMi0wOS0w/NF8xNC0xNi00M181/MDEgY29udi5qcGVn.jpg" alt="Looking down on the foundations from the old mill site for the Mazama Queen mine." data-width="3024" data-height="4032" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<div class="detail-sm nav-card-location">Mazama, Washington</div>
+<h3 class="title-sm nav-card-title"><span class="title-underline">Mazama Queen Mine</span></h3>
 <div class="lat-lng nav-card-details" aria-hidden="true">
--36.3717, 146.2900
+48.6242, -120.4508
 </div>
-</a> <a class="col-md-3 nav-card" href="/places/hume-castle">
-<img data-src="https://img.atlasobscura.com/yEB0J_QL5MxaNinNEHWp30baOVvbIi1jzGqSYy2dhs4/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85N2M0/MTM5Yi0wMzU0LTQ2/MWQtYjUxOS02ODcw/Zjc3MzcwZjU5ZWJj/ZGRiODI5ZmM4Yjdh/MThfSGVhZGluZyB1/cCB0byB0aGUgY2Fz/dGxlLmpwZw.jpg" alt="Heading up the hill to the castle" data-width="2048" data-height="1536" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<div class="detail-sm nav-card-location">Hume, Scotland</div>
-<h3 class="title-sm nav-card-title"><span class="title-underline">Hume Castle</span></h3>
+</a> <a class="col-md-3 nav-card" href="/places/sneglehuset-snailhouse">
+<img data-src="https://img.atlasobscura.com/vehqHjLSjQiTPyvbuGEwnank1HrewfG5lo-7fZRFRaI/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kMTYw/YTk1Zi02YzRlLTRh/YTEtYWJkOC02YmIw/NTVmMTNjNDM4MzE4/MmRiMTQ3YmQ4OGYw/ZmVfMjkzNDMxMTc2/OTRfMTkzYWZkYTBj/Zl9rLmpwZw.jpg" alt="Sneglehuset" data-width="2048" data-height="1365" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<div class="detail-sm nav-card-location">Thyborøn, Denmark</div>
+<h3 class="title-sm nav-card-title"><span class="title-underline">Sneglehuset (The Snail House)</span></h3>
 <div class="lat-lng nav-card-details" aria-hidden="true">
-55.6652, -2.4709
+56.6962, 8.2007
 </div>
-</a> <a class="col-md-3 nav-card" href="/places/fortune-island">
-<img data-src="https://img.atlasobscura.com/vQYZETyXq86JiHGfL-Ct5f4k0GrIHWGTJKdO01sJSHo/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hNDE1/MDQ5Ni1jMjgxLTQy/ODEtYmE4Yi0zYjE2/NWJjMjYzNTU3MjE0/NmEzMjY4OTI5Y2Iz/OWVfRkkgNC5qcGc.jpg" alt="A panorama view of the island with Greek inspired ornaments." data-width="1024" data-height="683" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<div class="detail-sm nav-card-location">Nasugbu, Philippines</div>
-<h3 class="title-sm nav-card-title"><span class="title-underline">Fortune Island</span></h3>
+</a> <a class="col-md-3 nav-card" href="/places/birthplace-of-the-british-tommy">
+<img data-src="https://img.atlasobscura.com/zWYZlOnt-WsL1kdYla9FXNJse9SFwr8hfOCmN_5Ui98/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80ZTk4/ZDEwMi00Y2I4LTQz/NmQtYWU0Ni0zZjA2/OWFkZjZiN2I5NDAx/YjFhZTk2YWM4MWU5/NjlfX0JyaXRpc2hf/VG9tbXlfdGVzdHNf/dGhlX2RlcHRoXy4u/X2FfZHJpZnRfb2Zf/c25vdy4sX0Jlc3Rh/bmRkZWVsbnJfMTU4/LTEzMjMuanBn.jpg" alt="A British Tommy on the Western Front, circa 1914-1918" data-width="4403" data-height="3416" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<div class="detail-sm nav-card-location">Odiham, England</div>
+<h3 class="title-sm nav-card-title"><span class="title-underline">Birthplace of the British Tommy</span></h3>
 <div class="lat-lng nav-card-details" aria-hidden="true">
-14.0519, 120.4952
+51.2572, -0.9501
 </div>
-</a> <a class="col-md-3 nav-card" href="/places/st-leonard-court-air-raid-shelter">
-<img data-src="https://img.atlasobscura.com/X5-c-ZHgPwzUCSKuKivhx8HWQAnQi0iRJG94NHTC5_c/rs:fill:222:148:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81YmQx/NTI3NS1lMTg4LTRm/M2YtYjM2OS03NjVk/MGI2OWU0ZmZmMjAx/YzBmZjgxMWE4MzQ1/MTRfQjI4QjMyNDMt/QjY1Ni00OTI4LUFC/REQtRjZBMUFGM0Ez/MkIxLmpwZWc.jpg" alt="The entrance to the air raid shelter." data-width="4032" data-height="3024" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<div class="detail-sm nav-card-location">London, England</div>
-<h3 class="title-sm nav-card-title"><span class="title-underline">St. Leonard’s Court Air Raid Shelter</span></h3>
+</a> <a class="col-md-3 nav-card" href="/places/insect-asylum">
+<img data-src="https://img.atlasobscura.com/COqpWjpm84chzpTJJaKKlaosD0K-64iAT7khgJGJXzs/rs:fill:222:148:1/g:ce/c:1055:703:nowe:6:541/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jYjYx/ZmZkOC1hOWE4LTQ2/MmUtOGNmMS1hMzQ5/NDEyMzg2NWJiZTc4/YTY2NzFmMGQ5ODk2/OTJfU2NyZWVuc2hv/dF8yMDIyMDkyNC0x/MTU4MTEucG5n.png" alt="" data-width="1061" data-height="1360" class="lazy img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<div class="detail-sm nav-card-location">Chicago, Illinois</div>
+<h3 class="title-sm nav-card-title"><span class="title-underline">The Insect Asylum </span></h3>
 <div class="lat-lng nav-card-details" aria-hidden="true">
-51.4674, -0.2697
+41.9334, -87.7148
 </div>
 </a> </div>
 </div>
@@ -715,7 +715,7 @@ Add a Place
 <li>
 <a href='/things-to-do/japan' title='Japan'>Japan</a>
 </li>
-</ul>
+ </ul>
 </div>
 <div class="col-md-9 section-top-content-col">
 <div class="places-section-top-content-header">
@@ -850,7 +850,7 @@ Add a Place
 <div class="heading-sm nav-link-heading">Stories</div>
 </a> <div class="nav-dropdown">
 <div class="container nav-dropdown-content">
- <div class="fake-bg"></div>
+<div class="fake-bg"></div>
 <div class="row table-display">
 <div class="col-md-3 left-panel">
 <ul class="nav-links-column links-column nav-hoverable-links-column">
@@ -997,30 +997,30 @@ Random Place
 <div class="DDPage__header-text-container grid-col-lg-8 grid-col-md-12 grid-col-sm-4">
 <div class="DDPage__header-hats">
 </div>
-<h1 class="DDPage__header-title">Scala Contarini del Bovolo</h1>
+<h1 class="DDPage__header-title">Keen&#39;s Steakhouse</h1>
 <div class="DDPage__header-place-info">
-<div class="DDPage__header-place-location"><a title="See all things to do in Venice, Italy." href="/things-to-do/venice-italy">Venice, Italy</a></div>
+<div class="DDPage__header-place-location"><a title="See all things to do in Manhattan, New York." href="/things-to-do/manhattan-new-york">Manhattan, New York</a></div>
 </div>
-<h3 class="DDPage__header-dek">This palatial spiral staircase was so unusual the name &quot;snail&quot; was given to the noble family who built it. &nbsp;</h3>
+<h3 class="DDPage__header-dek">Everyone from Mark Twain to Teddy Roosevelt has a pipe hanging from the walls of this historic chophouse.&nbsp;</h3>
 </div>
 <div class="DDPage__item-actions-column grid-col-lg-4">
 <aside class="hidden-print  DDPage__item-actions">
 <div class="col-xs-4X js-submit-wrap js-been-to-top-wrap action-btn-col hidden-print">
-<button class="col-md-12 btn-place-action-top btn-action-top btn-action-been-to js-user-required inactive" data-cause-key="been" data-streamable-id=25425 data-streamable-type=Place>
+<button class="col-md-12 btn-place-action-top btn-action-top btn-action-been-to js-user-required inactive" data-cause-key="been" data-streamable-id=10394 data-streamable-type=Place>
 <div class="title-lg been-to-icon icon-flag-full"></div>
 <div class="cta-sm action-text action-text-been-to">Been Here?</div>
 </button>
-<div class="title-md item-action-count">667</div>
+<div class="title-md item-action-count">413</div>
 </div>
 <div class="col-xs-4X js-submit-wrap js-like-top-wrap action-btn-col hidden-print">
-<button class="col-md-12 btn-place-action-top btn-action-top btn-action-like js-user-required inactive" data-cause-key="want" data-streamable-id=25425 data-streamable-type=Place>
+<button class="col-md-12 btn-place-action-top btn-action-top btn-action-like js-user-required inactive" data-cause-key="want" data-streamable-id=10394 data-streamable-type=Place>
 <div class="title-lg like-icon icon-small-star-full"></div>
 <div class="cta-sm action-text action-text-like">Want to Visit?</div>
 </button>
-<div class="title-md item-action-count">870</div>
+<div class="title-md item-action-count">868</div>
 </div>
 <div class="col-xs-4X vue-js-container action-btn-col hidden-print">
-<div data-place-country="Italy" data-place-city="Venice" data-place-title="Scala Contarini del Bovolo" data-place-id=25425 data-listable-id=25425 data-item-type=Place data-component-type="page-header" class="vue-js-place-page-add-to-list js-vue-component-wrap">
+<div data-place-country="United States" data-place-city="New York" data-place-title="Keen&#39;s Steakhouse" data-place-id=10394 data-listable-id=10394 data-item-type=Place data-component-type="page-header" class="vue-js-place-page-add-to-list js-vue-component-wrap">
 <place-page-add-to-list></place-page-add-to-list>
 </div>
 </div>
@@ -1028,120 +1028,93 @@ Random Place
 </div>
 </div>
 <div class="DDPage__mobile-hero-container js-contains-mobile-lightbox-link">
-<img data-src="https://img.atlasobscura.com/T3uXTV2Ri_nCg3CKWY9N0I5Iv_s0E__Dg5fySwd9iYs/rs:fill:580:580:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" alt="" data-width="3024" data-height="4032" class="lazy DDPage__mobile-hero-image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<img data-src="https://img.atlasobscura.com/8KcBls2BnTnkxG3l1WT13SceRBLxI7uaWgvwZTqAdeU/rs:fill:580:580:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" alt="" data-width="5184" data-height="3456" class="lazy DDPage__mobile-hero-image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
 <a href="javascript:void(0)" class="non-decorated-link btn-show-lightbox js-trigger-lightbox" aria-label="View all photos">View all photos</a>
 </div>
 <figcaption class="DDPage__image-caption DDPage__image-caption--mobile caption gallery-caption">
 <div>
-<span class="caption-credit"><a href="/users/matthiasheinrich"><strong>matthiasheinrich</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 <div class="DDPage__item-gallery-container item-gallery-container hidden-print">
-<div class="item-gallery js-item-gallery" data-image-count="11">
+<div class="item-gallery js-item-gallery" data-image-count="8">
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/Jiw3l-ItVHtvOFCnhAcdm-fNroUB1xjDRt6P3ptLEEQ/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/matthiasheinrich%22%3E%3Cstrong%3Ematthiasheinrich%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="0" data-thumbnail-url="https://img.atlasobscura.com/ubUj6sn1BBbB7WF3uZ1Fs3OnOruGELF4vo5S1ekDUpE/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" data-attribution-source="" tabindex="0" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="4032" src="https://img.atlasobscura.com/zExDv2RTo904w5iL3YZHCEMG0Km_ez3Xcuqyikov37M/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8ydnU0/NWpjbW56MzhmY2M2/YjkwMGU1YjhhMjdm/MF9JTUdfMzIyOS5K/UEc.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/IzTlGwD2cnLm8PYQ48C6r5JfY0bt30UnnQZsAIDg9s4/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="0" data-thumbnail-url="https://img.atlasobscura.com/0wgYqopqYsXnNhqhiGQmWTtgCYY2gHoLd5uGTfi-k1Y/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" data-attribution-source="" tabindex="0" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/1MKQOeCvxzxXI1V3j3zdTiRT7vY_VEyq6X6Mlezckns/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1Nzku/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-<span class="caption-credit"><a href="/users/matthiasheinrich"><strong>matthiasheinrich</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/0vQq-DENWmbt_o3owxsHmemvCYxyxUazmCiCRgE10-A/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yemdm/aXF5ODJkMWMzMGY0/NDhkMzEyYzMyN2U5/X0lNR18zNjM5LkpQ/Rw.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/matthiasheinrich%22%3E%3Cstrong%3Ematthiasheinrich%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="The Belvedere" data-slide-index="1" data-thumbnail-url="https://img.atlasobscura.com/0uZ1RneUGB0yibBZq-gFO4btcqq2XMo5mcTlKey6PSQ/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yemdm/aXF5ODJkMWMzMGY0/NDhkMzEyYzMyN2U5/X0lNR18zNjM5LkpQ/Rw.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="4032" data-height="3024" src="https://img.atlasobscura.com/csPSZ2IWlzC8IbUxGf40xnNhfbQI98UBUJTaQeviZq8/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yemdm/aXF5ODJkMWMzMGY0/NDhkMzEyYzMyN2U5/X0lNR18zNjM5LkpQ/Rw.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/Zv4bpdcYgR1pNrlu3dWQiSjz-gx_aP4T1yNOfgt8cXc/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzIu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="1" data-thumbnail-url="https://img.atlasobscura.com/f_ba0SmFfvoMYy2nnYT1Ja-tIwJNNbAsDK1lcyShStA/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzIu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/EzJ4tA-_bzvYBOcEFiDxQfNQb90GbBfbBbd62wj5J3A/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzIu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-The Belvedere <span class="caption-credit"><a href="/users/matthiasheinrich"><strong>matthiasheinrich</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/-E9dcfUCAAVtbGzbS-Ze4RpjjYX7AkxJIjW7Biv6Xto/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMDA4MDM3/X2M2NzQ0NGFlLWI5/MGMtNDMwMi1iOWE4/LWY1MWJmMWQzMTc4/OQ.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/justjoshy%22%3E%3Cstrong%3Ejustjoshy%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="View from entice to garden" data-slide-index="2" data-thumbnail-url="https://img.atlasobscura.com/pgl5CX7-PaLsit_ddAvg8DX0lbz1ChRXDC-FqsEIdgA/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMDA4MDM3/X2M2NzQ0NGFlLWI5/MGMtNDMwMi1iOWE4/LWY1MWJmMWQzMTc4/OQ.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="1284" data-height="2282" src="https://img.atlasobscura.com/QLDZrUDUdprJUU_bHbAD2BI8u200I5xBZRzpQTD7TBU/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMDA4MDM3/X2M2NzQ0NGFlLWI5/MGMtNDMwMi1iOWE4/LWY1MWJmMWQzMTc4/OQ.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/JV7XYHeX08kwrWFmzqAK6vGMmmu39K3E9qpro8ST_HA/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODQu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="2" data-thumbnail-url="https://img.atlasobscura.com/m64kBjt-OibR_ENrdzoWaLdZ61MfJoC684QQEjj0w5Q/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODQu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/LeawYYlJAgAsVirtB58BZicUwL9OWlWhBOCgkN1zaNE/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODQu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-View from entice to garden <span class="caption-credit"><a href="/users/justjoshy"><strong>justjoshy</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/H2rnSpatbwSmPlVgMy5tw0aHHA1X_EU8N-k8ajrSEjQ/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yZDQ0/N2FlOS1lYTE0LTQx/NjItYjZiNC1hNTY1/NDVmMTg5YTUzMWQw/ZGMzYzhjZDg3NGVh/ZDVfNUM0QjY3QkYt/ODhBQy00Q0VGLUEz/MzEtMzREMDlGNEQz/MDZCLmpwZWc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/tylercole%22%3E%3Cstrong%3Etylercole%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="It’s hard to find—look for this sign." data-slide-index="3" data-thumbnail-url="https://img.atlasobscura.com/gCO-gstcl-gDkqT-J8YuY2GzkWImLC3B_q9yG4-0F7I/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yZDQ0/N2FlOS1lYTE0LTQx/NjItYjZiNC1hNTY1/NDVmMTg5YTUzMWQw/ZGMzYzhjZDg3NGVh/ZDVfNUM0QjY3QkYt/ODhBQy00Q0VGLUEz/MzEtMzREMDlGNEQz/MDZCLmpwZWc.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="4032" data-height="3024" src="https://img.atlasobscura.com/j-pgR2QP-7WN5pIQnTrPwU2Gf--Yee8sJroB9EAdWko/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yZDQ0/N2FlOS1lYTE0LTQx/NjItYjZiNC1hNTY1/NDVmMTg5YTUzMWQw/ZGMzYzhjZDg3NGVh/ZDVfNUM0QjY3QkYt/ODhBQy00Q0VGLUEz/MzEtMzREMDlGNEQz/MDZCLmpwZWc.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/zokvqmAEnMVKOVNrSY6CegNs6Vinc1b1mZUBC65_WMc/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzAu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="3" data-thumbnail-url="https://img.atlasobscura.com/_dU_2vHik-FIndCIgyr8pyBdyYlnpgZ8Xd7MgpNbUiU/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzAu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/S89ChfcVPdFfJgZSjyumzT2yUIqXUmuX2zTwHfnAhZs/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NzAu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-It’s hard to find—look for this sign. <span class="caption-credit"><a href="/users/tylercole"><strong>tylercole</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/0GBbyzd3VBuBQ9I-iTFcHaLZByDEl0I7bowjJjH6Y74/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zYjE4/YWQ3My05N2M3LTQw/YTQtYTQxMi04YmI2/YTgyYjdkYjBjOTEx/NDdlMzQ5YThmMzQx/Y2VfQUM5OEJGNjgt/MEU5Ni00Nzg2LThG/OTMtRkI2ODI3Mjg3/OTEwLmpwZWc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/tylercole%22%3E%3Cstrong%3Etylercole%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="4" data-thumbnail-url="https://img.atlasobscura.com/4QzMciINI32-_PhbbODA0iBP1GFZ07Gq1OoUlyqgH6U/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zYjE4/YWQ3My05N2M3LTQw/YTQtYTQxMi04YmI2/YTgyYjdkYjBjOTEx/NDdlMzQ5YThmMzQx/Y2VfQUM5OEJGNjgt/MEU5Ni00Nzg2LThG/OTMtRkI2ODI3Mjg3/OTEwLmpwZWc.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="4032" src="https://img.atlasobscura.com/-dmSMlzuX2GqtYXotIhJdfHzi4cE9YvGc8SOhYolC3E/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zYjE4/YWQ3My05N2M3LTQw/YTQtYTQxMi04YmI2/YTgyYjdkYjBjOTEx/NDdlMzQ5YThmMzQx/Y2VfQUM5OEJGNjgt/MEU5Ni00Nzg2LThG/OTMtRkI2ODI3Mjg3/OTEwLmpwZWc.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/BD1lZFmlvGw3-f-nYE9STNHsyOlXC-4liD5dWK7BDc8/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODcu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="4" data-thumbnail-url="https://img.atlasobscura.com/4pLj_mv77yeDHq-emFsoRg1MoMhdlhmjhe_btdYxMGI/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODcu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/Or5eO3E6dBKD9Q_XuoH-VugHSy6OejrcqDPxNTiQ7LQ/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1ODcu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-<span class="caption-credit"><a href="/users/tylercole"><strong>tylercole</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/qo6IkWIX_N82SWSbHDNNX6Ld4oQvXdkcMUgtniCdGSQ/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83bDBy/aXRkcWFwczFjMzBm/NDQ4ZDMxMmMzMjdl/OV9JTUdfMzUzNi5K/UEc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/matthiasheinrich%22%3E%3Cstrong%3Ematthiasheinrich%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="5" data-thumbnail-url="https://img.atlasobscura.com/AlsindxZxmlF0I_ZJqhuAkkZUo6Lhw9LUffYdP6WLS4/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83bDBy/aXRkcWFwczFjMzBm/NDQ4ZDMxMmMzMjdl/OV9JTUdfMzUzNi5K/UEc.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="4032" src="https://img.atlasobscura.com/Rn917zgBVZRCOdxVdmEePz-YUoX3spdqRkI8wIZHrj4/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83bDBy/aXRkcWFwczFjMzBm/NDQ4ZDMxMmMzMjdl/OV9JTUdfMzUzNi5K/UEc.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/IMqlWjpAhJjUmARLBqrK07N_Rn3xm81ySkt4aud8rw8/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1OTUu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="5" data-thumbnail-url="https://img.atlasobscura.com/cIfV8vtchezIniLVDkoYamJqbiOzhGbmtjHV5FxENLw/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1OTUu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/o37qpv0bLCmt8wgNvSjLbaRHnj1eCyHX9tSs9SOuyBk/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1OTUu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-<span class="caption-credit"><a href="/users/matthiasheinrich"><strong>matthiasheinrich</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/YbV7_KpQ5o3bE2gjbkoxm5-0xwFJ3O0-jUPPAtoEHm4/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mZGY2/NzE1OTc4NDI0NGM3/NGNfU2NhbGFfQ29u/dGFyaW5pX2RlbF9C/b3ZvbG9fKFZlbmlj/ZSkuanBn.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20target=%22_blank%22%20href=%22https://en.wikipedia.org/wiki/Palazzo_Contarini_del_Bovolo%23/media/File:Scala_Contarini_del_Bovolo_(Venice).jpg%22%3EDidier%20Descouens%3C/a%3E%20(cc%20by-sa%204.0)%3C/span%3E" data-img-caption="Scala Contarini del Bovolo" data-slide-index="6" data-thumbnail-url="https://img.atlasobscura.com/jauI6B7yai2X1TyKHyNiPuvrb3x4Q4o3Hf4cOH7Fb1k/rs:fill:80:80:1/g:ce/c:2049:1366:nowe:0:651/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mZGY2/NzE1OTc4NDI0NGM3/NGNfU2NhbGFfQ29u/dGFyaW5pX2RlbF9C/b3ZvbG9fKFZlbmlj/ZSkuanBn.jpg" data-attribution-source="https://en.wikipedia.org/wiki/Palazzo_Contarini_del_Bovolo#/media/File:Scala_Contarini_del_Bovolo_(Venice).jpg" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="2048" data-height="2869" src="https://img.atlasobscura.com/MrMfQIA1kiGRjDfKslbVWUn2gKaRk1V7LksLNxIUd6w/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mZGY2/NzE1OTc4NDI0NGM3/NGNfU2NhbGFfQ29u/dGFyaW5pX2RlbF9C/b3ZvbG9fKFZlbmlj/ZSkuanBn.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/cDNq14fAw9O8TwPhh0hCc1y6B2mXLU3hghWEzUYpTRE/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NjIu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="6" data-thumbnail-url="https://img.atlasobscura.com/nYyuUH2fEmtkHrCwM6OwSWgWswe38BhIrp9HimQOvhE/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NjIu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/1Nyeil4Q9rl58Er3S38EWR8dusmtVIqoYWHNPAXc-28/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NjIu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-Scala Contarini del Bovolo <span class="caption-credit"><a target="_blank" href="https://en.wikipedia.org/wiki/Palazzo_Contarini_del_Bovolo#/media/File:Scala_Contarini_del_Bovolo_(Venice).jpg">Didier Descouens</a> (cc by-sa 4.0)</span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
 <figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/Ng3ywLn1Anhabh4IpIq-SJ1oIYy29WA0Bu2w-hGTj94/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jZTFl/NDg5OC1iOWNmLTQ4/NjktYTA5MC1iNTg2/YWZlZWIzMjBjNzQ4/ZDE3NDJjZWM4ZjJi/OTBfRUE1QTZDQkYt/MEI1QS00NDg4LUI3/MTMtNEQzQUQ1ODA5/MDZBLmpwZWc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/reley250%22%3E%3Cstrong%3Ereley250%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="7" data-thumbnail-url="https://img.atlasobscura.com/9_hS5BwaAtvFK5MXUFvw7SCthaafo6htC2EqUPb5vxo/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jZTFl/NDg5OC1iOWNmLTQ4/NjktYTA5MC1iNTg2/YWZlZWIzMjBjNzQ4/ZDE3NDJjZWM4ZjJi/OTBfRUE1QTZDQkYt/MEI1QS00NDg4LUI3/MTMtNEQzQUQ1ODA5/MDZBLmpwZWc.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="4032" src="https://img.atlasobscura.com/Uwc06QTEXSYONNQcVkN6ULrAI8TrWh6GrD9eUcSW_Ow/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jZTFl/NDg5OC1iOWNmLTQ4/NjktYTA5MC1iNTg2/YWZlZWIzMjBjNzQ4/ZDE3NDJjZWM4ZjJi/OTBfRUE1QTZDQkYt/MEI1QS00NDg4LUI3/MTMtNEQzQUQ1ODA5/MDZBLmpwZWc.jpg" />
+<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/aatWZWpFAn8lR9u2sadNI2m3rl-cPlddYm-t8Mspt4w/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NTQu/SlBH.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/luke-j-spencer%22%3E%3Cstrong%3ELuke%20J%20Spencer%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="Keen&#39;s Steakhouse" data-slide-index="7" data-thumbnail-url="https://img.atlasobscura.com/iBCwirxyD1s1ItY1vPdWZcbcvQjaN9x7x6obhnKJpBE/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NTQu/SlBH.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
+<img alt="" data-width="5184" data-height="3456" src="https://img.atlasobscura.com/b2cBiow2ka3AE7pzSkf0pt7gYNZsov_M2xRmRCGduyA/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMGY5/YzY1YTJiNjI3Y2I1/NTlfSU1HXzE1NTQu/SlBH.jpg" />
 </a>
 <figcaption class="DDPage__image-caption caption gallery-caption ">
 <div>
-<span class="caption-credit"><a href="/users/reley250"><strong>reley250</strong> (Atlas Obscura User)</a></span>
-</div>
-</figcaption>
-</figure>
-<figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/g9HdvG6MBLJo8EitCBByw18BcRZkLRsO-reneKUhj2I/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMjMyODlf/ZDRkODVhOWYtNDMy/NC00NGEzLWI0MjUt/OTU0MDA0YWYzNjI3.jpg" data-img-attribution="" data-img-caption="" data-slide-index="8" data-thumbnail-url="https://img.atlasobscura.com/g9yXxje7xWVeDSO4WPMTgDmtcGCOHjqPrvqaO1hA1_w/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMjMyODlf/ZDRkODVhOWYtNDMy/NC00NGEzLWI0MjUt/OTU0MDA0YWYzNjI3.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="3024" src="https://img.atlasobscura.com/l_yFlFXK4kkx6zCxV2lDA22W2kSGgUrcePS1TnFBcuc/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS9h/cHBfdXBsb2Fkcy9w/bGFjZV9pbWFnZXMv/dXNlcl8zMjMyODlf/ZDRkODVhOWYtNDMy/NC00NGEzLWI0MjUt/OTU0MDA0YWYzNjI3.jpg" />
-</a>
-<figcaption class="DDPage__image-caption caption gallery-caption ">
-</figcaption>
-</figure>
-<figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/s5KPLHMzZ2VysIPFO5NYN5W7gGFfcgi6Q6vfgwulKV0/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGNh/ZjMxNy0wMjJmLTRj/MDUtYTMwMS01MzUz/Y2JkNWJhZDUyZjBl/YTJlYzdmMjVhYzIy/NDRfMEU5OTEwOUIt/NTREQi00NDQ1LTk3/OEMtMUExMTE3MzYw/Qzk5LmpwZWc.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/reley250%22%3E%3Cstrong%3Ereley250%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="9" data-thumbnail-url="https://img.atlasobscura.com/s1eXESd1qhCd7ubQkrvroT7vM5SgZam9Y_es-8SMjho/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGNh/ZjMxNy0wMjJmLTRj/MDUtYTMwMS01MzUz/Y2JkNWJhZDUyZjBl/YTJlYzdmMjVhYzIy/NDRfMEU5OTEwOUIt/NTREQi00NDQ1LTk3/OEMtMUExMTE3MzYw/Qzk5LmpwZWc.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="3024" data-height="4032" src="https://img.atlasobscura.com/5Ohv6Ow8AD-LnOg5yHlu0s-dFxtEej2vRjppdwVcNz0/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGNh/ZjMxNy0wMjJmLTRj/MDUtYTMwMS01MzUz/Y2JkNWJhZDUyZjBl/YTJlYzdmMjVhYzIy/NDRfMEU5OTEwOUIt/NTREQi00NDQ1LTk3/OEMtMUExMTE3MzYw/Qzk5LmpwZWc.jpg" />
-</a>
-<figcaption class="DDPage__image-caption caption gallery-caption ">
-<div>
-<span class="caption-credit"><a href="/users/reley250"><strong>reley250</strong> (Atlas Obscura User)</a></span>
-</div>
-</figcaption>
-</figure>
-<figure class="js-item-image">
-<a href="javascript:void(0)" class="js-trigger-lightbox gallery-image-container" data-lightbox-src="https://img.atlasobscura.com/X-gfo9m4HKHvPuLoAuhpbfXLlssKJHx18uCBZXDZljE/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMGYx/MjUzMS1mMmFlLTRh/NjgtYTZmMS1kNDI0/OTM5NTA3ZTMxZmI3/OWIwZjM5ODExNmU5/NWZfSU1HXzczMTYu/anBn.jpg" data-img-attribution="%3Cspan%20class=%22caption-credit%22%3E%3Ca%20href=%22/users/skipather%22%3E%3Cstrong%3EBraecrest%3C/strong%3E%20(Atlas%20Obscura%20User)%3C/a%3E%3C/span%3E" data-img-caption="" data-slide-index="10" data-thumbnail-url="https://img.atlasobscura.com/tOc4DUW4i8nvIuArnvSfDS2MoL-vUKA45GHCYY7EYtY/rs:fill:80:80:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMGYx/MjUzMS1mMmFlLTRh/NjgtYTZmMS1kNDI0/OTM5NTA3ZTMxZmI3/OWIwZjM5ODExNmU5/NWZfSU1HXzczMTYu/anBn.jpg" data-attribution-source="" tabindex="-1" aria-label="View all photos">
-<img alt="" data-width="480" data-height="640" src="https://img.atlasobscura.com/e9eTvD3waWa0_S7lWLFo7QSorOvaAxiOcgAsXkjiMxw/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMGYx/MjUzMS1mMmFlLTRh/NjgtYTZmMS1kNDI0/OTM5NTA3ZTMxZmI3/OWIwZjM5ODExNmU5/NWZfSU1HXzczMTYu/anBn.jpg" />
-</a>
-<figcaption class="DDPage__image-caption caption gallery-caption ">
-<div>
-<span class="caption-credit"><a href="/users/skipather"><strong>Braecrest</strong> (Atlas Obscura User)</a></span>
+Keen&#39;s Steakhouse <span class="caption-credit"><a href="/users/luke-j-spencer"><strong>Luke J Spencer</strong> (Atlas Obscura User)</a></span>
 </div>
 </figcaption>
 </figure>
@@ -1155,21 +1128,21 @@ Scala Contarini del Bovolo <span class="caption-credit"><a target="_blank" href=
 </div>
 <div class="DDPage__item-actions DDPage__item-actions--mobile">
 <div class="col-xs-4X js-submit-wrap js-been-to-top-wrap action-btn-col hidden-print">
-<button class="col-md-12 btn-place-action-top btn-action-top btn-action-been-to js-user-required inactive" data-cause-key="been" data-streamable-id=25425 data-streamable-type=Place>
+<button class="col-md-12 btn-place-action-top btn-action-top btn-action-been-to js-user-required inactive" data-cause-key="been" data-streamable-id=10394 data-streamable-type=Place>
 <div class="title-lg been-to-icon icon-flag-full"></div>
 <div class="cta-sm action-text action-text-been-to">Been Here?</div>
 </button>
-<div class="title-md item-action-count">667</div>
+<div class="title-md item-action-count">413</div>
 </div>
 <div class="col-xs-4X js-submit-wrap js-like-top-wrap action-btn-col hidden-print">
-<button class="col-md-12 btn-place-action-top btn-action-top btn-action-like js-user-required inactive" data-cause-key="want" data-streamable-id=25425 data-streamable-type=Place>
+<button class="col-md-12 btn-place-action-top btn-action-top btn-action-like js-user-required inactive" data-cause-key="want" data-streamable-id=10394 data-streamable-type=Place>
 <div class="title-lg like-icon icon-small-star-full"></div>
 <div class="cta-sm action-text action-text-like">Want to Visit?</div>
 </button>
-<div class="title-md item-action-count">870</div>
+<div class="title-md item-action-count">868</div>
 </div>
 <div class="col-xs-4X vue-js-container action-btn-col hidden-print">
-<div data-place-country="Italy" data-place-city="Venice" data-place-title="Scala Contarini del Bovolo" data-place-id=25425 data-listable-id=25425 data-item-type=Place data-component-type="page-header" class="vue-js-place-page-add-to-list js-vue-component-wrap">
+<div data-place-country="United States" data-place-city="New York" data-place-title="Keen&#39;s Steakhouse" data-place-id=10394 data-listable-id=10394 data-item-type=Place data-component-type="page-header" class="vue-js-place-page-add-to-list js-vue-component-wrap">
 <place-page-add-to-list></place-page-add-to-list>
 </div>
 </div>
@@ -1186,7 +1159,7 @@ Scala Contarini del Bovolo <span class="caption-credit"><a target="_blank" href=
 <a class="mini-nav-logo-link non-decorated-link" title="Atlas Obscura" href="/"><i class="icon icon-atlas-icon"></i></a>
 </div>
 <div id="btf-nav-title" class="detail hidden-sm hidden-xs">
-Scala Contarini del Bovolo
+Keen&#39;s Steakhouse
 </div>
 <div class="social-links">
 <div class="btf-nav-square first-in-series">
@@ -1202,13 +1175,13 @@ Scala Contarini del Bovolo
 <a href="javascript:void(0)" class="icon icon-facebook link-facebook social-link js-social-action-tracked js-share-button-facebook" data-position="Sticky Header" data-service="Facebook" data-action="Share" target="_blank" aria-label="Share on Facebook"></a>
 </div>
 <div class="btf-nav-square">
-<a href="https://twitter.com/share?text=Scala%20Contarini%20del%20Bovolo%20@atlasobscura&amp;count=none&amp;url=https://www.atlasobscura.com/places/scala-contarini-del-bovolo" class="icon icon-twitter social-link link-twitter js-social-action-tracked js-social-ask-for-follow" target="_blank" data-position="Sticky Header" data-service="Twitter" data-action="Share" aria-label="Share on Twitter"></a>
+<a href="https://twitter.com/share?text=Keen%27s%20Steakhouse%20@atlasobscura&amp;count=none&amp;url=https://www.atlasobscura.com/places/keen-s-steakhouse" class="icon icon-twitter social-link link-twitter js-social-action-tracked js-social-ask-for-follow" target="_blank" data-position="Sticky Header" data-service="Twitter" data-action="Share" aria-label="Share on Twitter"></a>
 </div>
 <div class="btf-nav-square">
-<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" class="icon icon-reddit link-reddit social-link js-social-action-tracked" data-position="Sticky Header" data-service="reddit" data-action="Share" target="_blank" aria-label="Share on Reddit"></a>
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" class="icon icon-reddit link-reddit social-link js-social-action-tracked" data-position="Sticky Header" data-service="reddit" data-action="Share" target="_blank" aria-label="Share on Reddit"></a>
 </div>
 <div class="btf-nav-square">
-<a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Scala%20Contarini%20del%20Bovolo&url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" target="_blank" class="js-social-action-tracked DDPNavbarItem" data-position="Sticky Header" data-service="flipboard" data-action="Share" target="_blank" aria-label="Share on Flipboard">
+<a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Keen%27s%20Steakhouse&url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" target="_blank" class="js-social-action-tracked DDPNavbarItem" data-position="Sticky Header" data-service="flipboard" data-action="Share" target="_blank" aria-label="Share on Flipboard">
 <i class="DDPNavbarIcon--flipboard atlas-svg-wrap wrap-icon-aoc-flipboard">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-flipboard" xlink:href="#icon-aoc-flipboard" />
@@ -1217,7 +1190,7 @@ Scala Contarini del Bovolo
 </a>
 </div>
 <div class="btf-nav-square">
-<a href="https://getpocket.com/edit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" target="_blank" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="pocket" data-action="Share" target="_blank" aria-label="Share on Pocket">
+<a href="https://getpocket.com/edit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" target="_blank" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="pocket" data-action="Share" target="_blank" aria-label="Share on Pocket">
 <i class="DDPNavbarIcon DDPNavbarIcon--pocket atlas-svg-wrap wrap-icon-aoc-pocket">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-pocket" xlink:href="#icon-aoc-pocket" />
@@ -1255,19 +1228,19 @@ Scala Contarini del Bovolo
 </svg>
 </i>
 <span class="DDPNavbarItem__text">Facebook</span></a>
-<a href="https://twitter.com/share?text=Scala%20Contarini%20del%20Bovolo%20@atlasobscura&amp;count=none&amp;url=https://www.atlasobscura.com/places/scala-contarini-del-bovolo" class="DDPNavbarItem js-social-action-tracked js-social-ask-for-follow" target="_blank" data-position="Sticky Header" data-service="Twitter" data-action="Share" aria-label="Share on Twitter"><i class="DDPNavbarIcon--twitter atlas-svg-wrap wrap-icon-aoc-twitter">
+<a href="https://twitter.com/share?text=Keen%27s%20Steakhouse%20@atlasobscura&amp;count=none&amp;url=https://www.atlasobscura.com/places/keen-s-steakhouse" class="DDPNavbarItem js-social-action-tracked js-social-ask-for-follow" target="_blank" data-position="Sticky Header" data-service="Twitter" data-action="Share" aria-label="Share on Twitter"><i class="DDPNavbarIcon--twitter atlas-svg-wrap wrap-icon-aoc-twitter">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-twitter" xlink:href="#icon-aoc-twitter" />
 </svg>
 </i>
 <span class="DDPNavbarItem__text">Twitter</span></a>
-<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="reddit" data-action="Share" target="_blank" aria-label="Share on Reddit"><i class="DDPNavbarIcon--reddit atlas-svg-wrap wrap-icon-aoc-reddit">
+<a href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="reddit" data-action="Share" target="_blank" aria-label="Share on Reddit"><i class="DDPNavbarIcon--reddit atlas-svg-wrap wrap-icon-aoc-reddit">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-reddit" xlink:href="#icon-aoc-reddit" />
 </svg>
 </i>
 <span class="DDPNavbarItem__text">Reddit</span></a>
-<a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Scala%20Contarini%20del%20Bovolo&url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" target="_blank" class="DDPNavbarItem js-social-action-tracked DDPNavbarItem" data-position="Sticky Header" data-service="flipboard" data-action="Share" target="_blank" aria-label="Share on Flipboard">
+<a href="https://share.flipboard.com/bookmarklet/popout?v=2&title=Keen%27s%20Steakhouse&url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" target="_blank" class="DDPNavbarItem js-social-action-tracked DDPNavbarItem" data-position="Sticky Header" data-service="flipboard" data-action="Share" target="_blank" aria-label="Share on Flipboard">
 <i class="DDPNavbarIcon--flipboard atlas-svg-wrap wrap-icon-aoc-flipboard">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-flipboard" xlink:href="#icon-aoc-flipboard" />
@@ -1275,7 +1248,7 @@ Scala Contarini del Bovolo
 </i>
 <span class="DDPNavbarItem__text">Flipboard</span>
 </a>
-<a href="https://getpocket.com/edit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fscala-contarini-del-bovolo" target="_blank" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="pocket" data-action="Share" target="_blank" aria-label="Share on Pocket">
+<a href="https://getpocket.com/edit?url=https%3A%2F%2Fwww.atlasobscura.com%2Fplaces%2Fkeen-s-steakhouse" target="_blank" class="DDPNavbarItem js-social-action-tracked" data-position="Sticky Header" data-service="pocket" data-action="Share" target="_blank" aria-label="Share on Pocket">
 <i class="DDPNavbarIcon DDPNavbarIcon--pocket atlas-svg-wrap wrap-icon-aoc-pocket">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-pocket" xlink:href="#icon-aoc-pocket" />
@@ -1313,64 +1286,47 @@ Scala Contarini del Bovolo
 <div class="DDPage__content-row grid-row">
 <div class="DDPage__left-rail grid-col-lg-2 grid-hide-md grid-hide-sm">
 <div class="DDPDestinationInset hidden-print">
-<div class="DDPDestinationInset__heading">Go Here With Us</div>
-<div class="CardWrapper --TripSeriesWrapper js-CardWrapper ">
-<a class="Card --content-card-v2 --content-card-item" data-type="TripSeries" data-item-id="415" data-gtm-content-type="TripSeries" data-country="Italy" data-global-region="Europe" data-fee="5860" data-all-fees="[5860,5860,5860]" data-added="2022-09-13 15:18:00 -0400" data-start-time="2023-09-16 08:00:00 -0400" data-all-start-times="[&quot;2023-09-16 08:00:00 -0400&quot;,&quot;2023-10-07 08:00:00 -0400&quot;,&quot;2023-12-09 07:00:00 -0500&quot;]" data-sold-out="false" data-tags="[&quot;history &amp; culture&quot;,&quot;hidden cities&quot;]" data-promo-tags="[]" data-region="Europe" href="/unusual-trips/secrets-of-italy-rome-to-venice">
-<figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/UiKWB2lwJNB4U2L7sAXoe7zQ8HBf7uMiD0vYoZD9IKw/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy9kMjBk/ODE0My1iMmM5LTRh/NDYtYjFlMS1iZDNm/MjYxM2ZmMzNiMWM1/YzhlNWJiNmE3Mzdl/MzNfeWMtbGlhby1x/eVRJR05NUkV1OC11/bnNwbGFzaC5qcGc.jpg" alt="" data-width="3648" data-height="2736" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
-<div class="Card__content-wrap --content-card-text">
-<div class="Card__hat">history &amp; culture</div>
-<h3 class="Card__heading --content-card-v2-title">
-<span>Secrets of Italy: Rome to Venice</span>
-</h3>
-<div class="Card__subheading  --trip-info --content-card-info">
-<span class="trip-fees">Italy</span>
-</div>
-<div class="Card__subheading --trip-info --content-card-info">
-Sep 16&ndash;26, 2023
-</div>
-<div class="Card__item-cost --trip-info --content-card-info">
-<span class="trip-fees">From <span class="TripPrice__number">$5,860</span> <span class="TripPrice__currency">USD</span></span>
-</div>
+<div class="DDPDestinationInset__heading">Top Places in New York</div>
+<a href="/places/the-white-horse-tavern-new-york-new-york" class="DDPDestinationInset__link">
+<figure class="">
+<img data-src="https://img.atlasobscura.com/b-9P033c-OSbUoedzvN74FkD_3KQ8Ov-2W5xthWzSJ0/rs:fill:372:248:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83YzBl/Y2ZmYTQ3NGRjOTg2/ZTdmNGNkYmMzNTRj/ZTIyODgyOGE2Mjc2/LmpwZw.jpg" alt="" data-width="3000" data-height="2401" class="lazy img-responsive DDPDestinationInset__image" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+</figure>
+<div class="DDPDestinationInset__place">
+<div class="DDPDestinationInset__title">The White Horse Tavern </div>
+<div class="DDPDestinationInset__location">New York, New York</div>
 </div>
 </a>
-<div class="Card__subheading Card__more-items">
-+ 2 other dates
+<hr class="DDPDestinationInset__hr">
+<a href="/places/chancellor-robert-r-livingston-masonic-library" class="DDPDestinationInset__link">
+<div class="DDPDestinationInset__place">
+<div class="DDPDestinationInset__title">Chancellor Robert R Livingston Masonic Library</div>
+<div class="DDPDestinationInset__location">New York, New York</div>
 </div>
+</a>
+<hr class="DDPDestinationInset__hr">
+<a href="/places/jefferson-market-library" class="DDPDestinationInset__link">
+<div class="DDPDestinationInset__place">
+<div class="DDPDestinationInset__title">Jefferson Market Library</div>
+<div class="DDPDestinationInset__location">New York, New York</div>
 </div>
+</a>
+<a href="/things-to-do/manhattan-new-york" class="TextCTA--v2 DDPDestinationInset__see-all-link">See All <i class=" atlas-svg-wrap wrap-icon-aoc-arrow-forward">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use href="#icon-aoc-arrow-forward" xlink:href="#icon-aoc-arrow-forward" />
+</svg>
+</i>
+</a>
 </div>
 </div>
 <div class="DDPageContent__column grid-col-lg-6 grid-col-md-7">
-<div class="DDPAssociatedEvent grid-hide-lg">
-<div class="HorizontalCardWrapper --TripSeriesWrapper ">
-<a class="HorizontalCard" href="/unusual-trips/secrets-of-italy-rome-to-venice">
-<div class="HorizontalCard__content-wrap">
-<div class="HorizontalCard__hat">Go Here With Us</div>
-<h3 class="HorizontalCard__heading">
-<span class="js-socket-title">Secrets of Italy: Rome to Venice</span>
-</h3>
-<div class="HorizontalCard__content js-subtitle-content js-socket-subtitle">
-</div>
-<div class="HorizontalCard__footer-spacer"></div>
-<div class="HorizontalCard__footer">Book Now</div>
-</div>
-<figure class="HorizontalCard__figure js-HorizontalCard__figure js-content-horizontal-card-figure">
-<img data-src="https://img.atlasobscura.com/UiKWB2lwJNB4U2L7sAXoe7zQ8HBf7uMiD0vYoZD9IKw/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2V2ZW50/X2ltYWdlcy9kMjBk/ODE0My1iMmM5LTRh/NDYtYjFlMS1iZDNm/MjYxM2ZmMzNiMWM1/YzhlNWJiNmE3Mzdl/MzNfeWMtbGlhby1x/eVRJR05NUkV1OC11/bnNwbGFzaC5qcGc.jpg" alt="" data-width="3648" data-height="2736" class="lazy HorizontalCard__img u-img-responsive" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
-</a>
-</div>
-</div>
 <div id="place-body" class="DDP__body-copy">
 <div>
-<p><span class="section-start-text">Hidden in the center of </span><a class="destination-link place-destination-link" href="/things-to-do/venice-italy">Venice</a>, unknown to most tourists, is a spiraling “snail” staircase that winds up the tower-like facade of a historic palazzo. It was so unique at the time it was built at the very end of the 15th century that it’s responsible for naming both the palace it’s attached to and the entire branch of the Contarini noble family that lived there.</p>
-<p>Secluded in the middle of the sestiere of San Marco, the palazzo’s crowning feature is the large interior flight of winding stairs that spirals up into the sky, named the Scala Contarini del Bovolo. “Del Bovolo” translates to “of the snail” in the Venetian dialect, referring to the spiral shape of the <em>scala </em>(staircase).</p>
-<p>The winding tower was so popular, the “bovolo” name became forever attached to not only the palace but also the Contarini family, one of the founding families of Venice, who had the spiraling facade built to showcase their great wealth.</p>
-<p>Though it’s not far from the Campo Manin, the staircase can be quite difficult to find. It’s located on a small backstreet that requires navigating Venice’s notorious maze of narrow alleyways. It is worth the effort. The scala with its attached arcades spirals 90 feet high, combining elements of Gothic, Renaissance, and Byzantine styles. Visitors can climb to the top of its 80 steps, from which there is a beautiful view over the rooftops of the city. </p>
-<p>The architectural gem is depicted in Jacopo de Barbari’s famous bird’s eye view of Venice, painted in 1500 (now held at the Museo Correr). The storybook staircase also made a prominent appearance in Orson Welles’ 1952 adaptation of Shakespeare’s <em>Othello</em>.</p>
+<p><span class="section-start-text">Located in a neighborhood that </span>has changed all around it, Keen’s Steakhouse still displays the thousands of clay pipes that were once held for presidents, writers, and other world-famous celebrities.</p>
+<p>When people think of Manhattan’s theatre district, Broadway and Times Square immediately spring to mind. But the city’s original theatre district was in the Tenderloin area which is now known as Herald Square. And since 1885, actors, audience members, and theatre impresarios would seek refreshment at Albert Keen’s chophouse. Legend has it that actors in full costume from the Garrick theatre next door would rush into Keen’s between acts for a quick ale and a bite of his famous mutton chops before running back on stage.</p>
+<p>But what makes Keen’s quite so extraordinary is what hangs from the ceiling: the world’s largest collection of Church Warden pipes. Being made of clay and too fragile to carry around, smoking enthusiasts would keep their pipes at the tavern for their own private use when dropping in. And Keen’s has over 90,000 pipe smokers on its roster, amongst them such tobacco smoking luminaries as Theodore Roosevelt, Buffalo Bill Cody, Herbert Hoover, Albert Einstein, and Babe Ruth. Each pipe is numbered, and upon entering the Chophouse, you would hand your membership over to a page boy who would retrieve your pipe. City laws today have brought an end to this civilized past time, but the 90,000 pipes still adorn the ceilings of the dining rooms of Keen’s Chophouse. As you walk through the rabbit warren of rooms (the Lincoln Room, the Lambs Room, the Lillie Langtry Room) and end up at the wood paneled bar, over which hangs the seductive portrait of Miss Keen, the proprietor’s mistress, it is easy to imagine stepping back in time, to when this corner of New York was the heart of its theatrical community.</p>
+<p>Today’s visitors can enjoy themselves in this hidden New York gem with Keen’s own pub ale and their famous mutton chops. “A mutton chop at Keens!” ran an old advert, “There’s a reminder to thrill a man who has been around! This pleasant old tavern is the perfect spot for a chop and a mug of ale!” As true today as it was over 120 years ago.</p>
+<p> </p>
 </div>
-</div>
-<div class="DDP__direction-copy">
-<h6 class="DDPage__body-heading">Know Before You Go</h6>
-<p><p>Access is limited on a daily basis and during the busy tourist season it is recommended to purchase your tickets in advance.</p></p>
 </div>
 <div class="mixed-recirc-callout">
 </div>
@@ -1382,8 +1338,8 @@ Sep 16&ndash;26, 2023
   
   itemTags__tag--light
   itemTags__tag--rounded">
-<a class="itemTags__link js-item-tags-link" href="/categories/renaissance">
-renaissance
+<a class="itemTags__link js-item-tags-link" href="/categories/antiquities">
+antiquities
 </a>
 </span>
 <span class="itemTags__tag js-item-tags-tag
@@ -1392,8 +1348,8 @@ renaissance
   
   itemTags__tag--light
   itemTags__tag--rounded">
-<a class="itemTags__link js-item-tags-link" href="/categories/stairs">
-stairs
+<a class="itemTags__link js-item-tags-link" href="/categories/presidents">
+presidents
 </a>
 </span>
 <span class="itemTags__tag js-item-tags-tag
@@ -1402,8 +1358,8 @@ stairs
   
   itemTags__tag--light
   itemTags__tag--rounded">
-<a class="itemTags__link js-item-tags-link" href="/categories/palaces">
-palaces
+<a class="itemTags__link js-item-tags-link" href="/categories/literature">
+literature
 </a>
 </span>
 <span class="itemTags__tag js-item-tags-tag
@@ -1412,8 +1368,18 @@ palaces
   
   itemTags__tag--light
   itemTags__tag--rounded">
-<a class="itemTags__link js-item-tags-link" href="/categories/architecture">
-architecture
+<a class="itemTags__link js-item-tags-link" href="/categories/restaurants">
+restaurants
+</a>
+</span>
+<span class="itemTags__tag js-item-tags-tag
+  
+  
+  
+  itemTags__tag--light
+  itemTags__tag--rounded">
+<a class="itemTags__link js-item-tags-link" href="/categories/shops">
+shops
 </a>
 </span>
 </div>
@@ -1424,119 +1390,41 @@ architecture
 <div class="ugc-editors">
 <div class="ugc-editor-icons">
 <div class="solo DDPContributor__icon">
-<a href="/users/matthiasheinrich" target="_blank">
-<img data-src="https://img.atlasobscura.com/UsyEY5NqioXypdBr-LFN2OpxtE3fh7cyY8JnDKvvGrU/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE4LzAyLzEzLzIw/LzIxLzI4L2VlMjZh/ZTZhLTBmYWEtNDlh/My1iNWQyLTRjYjBh/NjFhNDc5YS9JTUdf/MDQ0MC5KUEc.jpg" alt="matthiasheinrich" data-width="5184" data-height="3456" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<a href="/users/luke-j-spencer" target="_blank">
+<img data-src="https://img.atlasobscura.com/nRI0gyPeMxow3n_EQxpTqK1Md-zOT4dvtue2VkAgXfE/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE5LzAzLzMwLzAx/LzM5LzM4LzU3OWQ1/M2U2LWYxZGUtNDhk/OC05M2Y4LWUyNDZl/NWExMmVmMS9zX3Jv/c2VuXzcgY29weS5q/cGc.jpg" alt="Luke J Spencer" data-width="527" data-height="721" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
 </a>
 </div>
 </div>
 <h6 class="DDPContributor__label">Added by</h6>
 <div class="DDPContributorsList">
-<a class="DDPContributorsList__contributor" href="/users/matthiasheinrich">matthiasheinrich</a>
+<a class="DDPContributorsList__contributor" href="/users/luke-j-spencer">Luke J Spencer</a>
 </div>
 </div>
 <div class="ugc-editors">
-<div class="DDPContributors__icons ugc-editor-icons">
-<div class="DDPContributor__icon" title="reley250" data-placement="bottom" data-toggle="tooltip">
-<a href="/users/reley250" target="_blank">
-<img data-src="https://img.atlasobscura.com/7AaXDNQDGhlxbf8jQerVgF1VreoMh-bgwEqkuAeTIzg/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDIwLzAxLzE3LzIy/LzM1LzQ0LzczYjc5/ZDA0LTg3ZTctNGUz/MC04NjlkLWYwMDdj/ODE1ZDFlNi85MTdD/OTZERi05QkIzLTQ3/QzEtQTA1Qy1FMTM5/QkFDMzFENEMuanBl/Zw.jpg" alt="reley250" data-width="2320" data-height="2320" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-</a>
-</div>
-<div class="DDPContributor__icon" title="Braecrest" data-placement="bottom" data-toggle="tooltip">
-<a href="/users/skipather" target="_blank">
-<img data-src="https://img.atlasobscura.com/3xpD3dYXsORjGOiZx6pGmMauCWhkJGJtQ6s-lHh3xOc/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE2LzExLzAxLzE1/LzQ1LzA0L2QwOTAz/YTI1LTM2NDgtNGE4/NS1hNzIyLTFiZDlm/NjA1MTY3OS9NYW5j/aHUgUGljaHUuanBn.jpg" alt="Braecrest" data-width="604" data-height="453" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-</a>
-</div>
-<div class="DDPContributor__icon" title="justjoshy" data-placement="bottom" data-toggle="tooltip">
-<a href="/users/justjoshy" target="_blank">
-<i class="DDPContributor__image--blank">j</i>
-</a>
-</div>
-<div class="DDPContributor__icon" title="yellingBytes" data-placement="bottom" data-toggle="tooltip">
-<a href="/users/yellingbytes" target="_blank">
-<img data-src="https://img.atlasobscura.com/qpq90n3RyOiYN8DzsCgQ0UGgpQrsDU3vfjoADS4rKUs/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDIxLzExLzMwLzIx/LzA4LzU0LzQ3YjZh/NDAwLTJiNjMtNDQw/Yi1iN2IyLWFiYWY3/YzM0YTQzOC9TY3Jl/ZW5zaG90IDIwMjEt/MDktMTIgYXQgMjMu/MDkuMDMucG5n.png" alt="yellingBytes" data-width="187" data-height="189" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-</a>
-</div>
-<div class="DDPContributor__icon" title="erjeffery" data-placement="bottom" data-toggle="tooltip">
-<a href="/users/erjeffery" target="_blank">
-<img data-src="https://img.atlasobscura.com/y270_RhZ7hm0UFC4q3X_c7DBpsiu6PnA3zmu7pWDXt4/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE4LzAxLzEwLzEz/LzAzLzI4LzhhNDBi/MDczLTNjNzQtNGVk/Ny04OTg3LTE2Mjdk/OTZiMTZlMi8xNDk1/Mzg4MV8xMzM0MDMy/NTczMjk0NzY1XzQ2/MDU4MDYwMDA5NzU2/OTc2MDhfbi0yLmpw/Zw.jpg" alt="erjeffery" data-width="302" data-height="377" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<div class="ugc-editor-icons">
+<div class="solo DDPContributor__icon">
+<a href="/users/molly-mcbride-jacobson" target="_blank">
+<img data-src="https://img.atlasobscura.com/-6raupUNe_osefchTC-nPTWI1TRBIW9ZGclbGq-xKc4/rs:fill:64:64:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE2LzAzLzMxLzAx/LzE5LzM3L2FhYjNm/MjExLTg0ODQtNDVk/MC1iYTE3LTBhNmNh/N2VmYzdlMS90dW1i/bHJfbGRvcjdzVmdT/TjFxYjh1Z3JvMV8x/MjgwLmpwZw.jpg" alt="Molly McBride Jacobson" class="lazy lazy DDPContributor__image" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
 </a>
 </div>
 </div>
 <h6 class="DDPContributor__label">Edited by</h6>
 <div class="DDPContributorsList">
-<a class="DDPContributorsList__contributor" href="/users/reley250">reley250</a>,
-<a class="DDPContributorsList__contributor" href="/users/skipather">Braecrest</a>,
-<a class="DDPContributorsList__contributor" href="/users/justjoshy">justjoshy</a>,
-<a class="DDPContributorsList__contributor" href="/users/yellingbytes">yellingBytes</a>,
-<a class="DDPContributorsList__contributor" href="/users/erjeffery">erjeffery</a>
-<a class="js-show-editor-list DDPContributorsList__popover-trigger" target="_blank" data-toggle="editor-list-popover" data-placement="bottom">See All +</a>
-<div class="js-editor-list hidden">
-<ul>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/justjoshy">
-<i style="display: inline-flex;" class="user-imageless-icon user-imageless-icon-xs">
-j
-</i>
-<span>justjoshy</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/cguthrie1950">
-<img data-src="https://img.atlasobscura.com/OQssnD7iMX86w0JAJJeV4rSRYLIboOYPcxwDmRXvhBo/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDIyLzAxLzE2LzEy/LzUyLzAxL2RlMmI1/N2NmLWE4N2UtNDA2/Ni05NzFmLTNhMWE3/MWI2MjhmOS85N19B/YnVfU2ltYmVsLmpw/Zw.jpg" alt="cguthrie1950" data-width="1489" data-height="1088" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>cguthrie1950</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/luka-esenko">
-<img data-src="https://img.atlasobscura.com/2kesICBw4Skwn9EZVeEp9f3y7EbxSuvkjpouggSoIUE/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE5LzEyLzEwLzEx/LzI0LzA1L2YxNDU4/MDk0LTNjZTQtNGQw/Yi05NDQ1LTY5ZTlh/YzViN2I3OC81U1Jf/ODE0Mi1jb3B5Lmpw/Zw.jpg" alt="Luka Esenko" data-width="1600" data-height="1600" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>Luka Esenko</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/yellingbytes">
-<img data-src="https://img.atlasobscura.com/uGHci_6RkzZk01TneRX8ci_XCyEQibTmT_5xr4fnEKU/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDIxLzExLzMwLzIx/LzA4LzU0LzQ3YjZh/NDAwLTJiNjMtNDQw/Yi1iN2IyLWFiYWY3/YzM0YTQzOC9TY3Jl/ZW5zaG90IDIwMjEt/MDktMTIgYXQgMjMu/MDkuMDMucG5n.png" alt="yellingBytes" data-width="187" data-height="189" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>yellingBytes</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/reley250">
-<img data-src="https://img.atlasobscura.com/LGBYfuwZiFzPj5zX7RHsY5W2FHq7bZSS1xDyWF5Gh8Q/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDIwLzAxLzE3LzIy/LzM1LzQ0LzczYjc5/ZDA0LTg3ZTctNGUz/MC04NjlkLWYwMDdj/ODE1ZDFlNi85MTdD/OTZERi05QkIzLTQ3/QzEtQTA1Qy1FMTM5/QkFDMzFENEMuanBl/Zw.jpg" alt="reley250" data-width="2320" data-height="2320" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>reley250</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/erjeffery">
-<img data-src="https://img.atlasobscura.com/ZcRxEkf3lRrMeSEZOrGq5SjGhUDUWkj414qi6hdM_x0/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE4LzAxLzEwLzEz/LzAzLzI4LzhhNDBi/MDczLTNjNzQtNGVk/Ny04OTg3LTE2Mjdk/OTZiMTZlMi8xNDk1/Mzg4MV8xMzM0MDMy/NTczMjk0NzY1XzQ2/MDU4MDYwMDA5NzU2/OTc2MDhfbi0yLmpw/Zw.jpg" alt="erjeffery" data-width="302" data-height="377" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>erjeffery</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/jlp60615">
-<i style="display: inline-flex;" class="user-imageless-icon user-imageless-icon-xs">
-J
-</i>
-<span>JLP60615</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/skipather">
-<img data-src="https://img.atlasobscura.com/cBI3le_YAo81O7VMmK5fUac6eEonCUkbNxWhdszhh9c/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE2LzExLzAxLzE1/LzQ1LzA0L2QwOTAz/YTI1LTM2NDgtNGE4/NS1hNzIyLTFiZDlm/NjA1MTY3OS9NYW5j/aHUgUGljaHUuanBn.jpg" alt="Braecrest" data-width="604" data-height="453" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>Braecrest</span>
-</a> </li>
-<li class="DDPContributorsList__item">
-<a class="DDPContributorsList__contributor" href="/users/tylercole">
-<img data-src="https://img.atlasobscura.com/vMOkXO9Qud902ko-4KXnL0lnGniID7t2n9hAeo2iuy8/rs:fill:35:35:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDE3LzA1LzE4LzE4/LzUyLzI3LzVmMGQz/MjNlLTYyMTYtNGEy/YS1hZmY3LTBlMTA3/YjkzZmZhMy9JTUdf/NTYzNi5KUEc.jpg" alt="tylercole" data-width="1898" data-height="1898" class="lazy user-img-circle user-img-circle-xs" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
-<span>tylercole</span>
-</a> </li>
-</ul>
-</div>
+<a class="DDPContributorsList__contributor" href="/users/molly-mcbride-jacobson">Molly McBride Jacobson</a>
 </div>
 </div>
 <hr class="DDP__hr">
 <div class="DDP__section-label">Published</div>
-<div class="DDPContributor__name">February 15, 2018</div>
+<div class="DDPContributor__name">March 20, 2014</div>
 <hr class="DDP__hr">
 <div class="DDP__section-label">Edit this listing</div>
-<a class="js-user-required hidden-print DDP__add-ugc-link" aria-label="Make an Edit" data-cause-key="p_edit" href="/places/scala-contarini-del-bovolo/edit">Make an Edit<i class="DDP__ugc-button-icon atlas-svg-wrap wrap-icon-aoc-pencil">
+<a class="js-user-required hidden-print DDP__add-ugc-link" aria-label="Make an Edit" data-cause-key="p_edit" href="/places/keen-s-steakhouse/edit">Make an Edit<i class="DDP__ugc-button-icon atlas-svg-wrap wrap-icon-aoc-pencil">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-pencil" xlink:href="#icon-aoc-pencil" />
 </svg>
 </i>
 </a>
-<a class="js-user-required hidden-print DDP__add-ugc-link" aria-label="Add Photos" data-cause-key="img" href="/places/scala-contarini-del-bovolo/add_photos">Add Photos<i class="DDP__ugc-button-icon atlas-svg-wrap wrap-icon-aoc-add-a-photo">
+<a class="js-user-required hidden-print DDP__add-ugc-link" aria-label="Add Photos" data-cause-key="img" href="/places/keen-s-steakhouse/add_photos">Add Photos<i class="DDP__ugc-button-icon atlas-svg-wrap wrap-icon-aoc-add-a-photo">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-add-a-photo" xlink:href="#icon-aoc-add-a-photo" />
 </svg>
@@ -1556,13 +1444,7 @@ J
 </h6>
 <ul class="collapse" id="place-sources" data-toggle="false">
 <li class="DDPSources__item place-source">
-Bassi, E., “Palazzi di Venezia: Admiranda Urbis Venetae”, La Stamperia di Venezia 1976.
-</li>
-<li class="DDPSources__item place-source">
-Stevanato, P., “La Scala Contarini del Bovolo. Volume 10 of Carità e Assistenza a Venezia”, IRE, Venezia 1999.
-</li>
-<li class="DDPSources__item place-source">
-Salvadori Rizzi, L., “Giorgio Spavento e la Scala del Bovolo di palazzo Contarini”, in Arte Documento, 10, Edizioni della Laguna, Venezia 1996, pp. 43-47.
+<a target="_blank" href="http://en.wikipedia.org/wiki/Keens_Steakhouse">http://en.wikipedia.org/wiki/Keens_Steakhouse</a>
 </li>
 </ul>
 </div>
@@ -1597,7 +1479,7 @@ Salvadori Rizzi, L., “Giorgio Spavento e la Scala del Bovolo di palazzo Contar
 </i>
 </div>
 <div id="static-place-map-container" class="DDPageSiderail__map" data-toggle="modal" data-target="#DDPMapModal">
-<img width="100%" height="auto" class="lazy js-static-map" data-src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDS5K_jUTkei2yHIfiUGCoXTjyaHMO0N84&amp;center=45.434824,12.334615&amp;zoom=15&amp;autoscale=2&amp;scale=2&amp;size=281x174&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=scale:2%7Cicon:https://s3.amazonaws.com/atlas-dev/misc/map-pins/Solid_Pin_Standard%402x.png%7C45.434824,12.334615&amp;signature=6_nL-F1tfaYxabrC4wf-Bo--Mho=" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
+<img width="100%" height="auto" class="lazy js-static-map" data-src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDS5K_jUTkei2yHIfiUGCoXTjyaHMO0N84&amp;center=40.750674,-73.986689&amp;zoom=15&amp;autoscale=2&amp;scale=2&amp;size=281x174&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=scale:2%7Cicon:https://s3.amazonaws.com/atlas-dev/misc/map-pins/Solid_Pin_Standard%402x.png%7C40.750674,-73.986689&amp;signature=YVpqpVrGsDHz2JQ-vcdKrde3loM=" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" />
 </div>
 </aside>
 <aside class="DDPageSiderail__details ">
@@ -1607,28 +1489,28 @@ Salvadori Rizzi, L., “Giorgio Spavento e la Scala del Bovolo di palazzo Contar
 <use href="#icon-aoc-near-me" xlink:href="#icon-aoc-near-me" />
 </svg>
 </i>
-<div>Corte Contarina, del Bovolo, 4303<br>Venice, 30124<br>Italy
+<div>72 W 36th Street<br>New York, New York, 10018<br>United States
 <div>
 </address>
-<div class="DDPageSiderail__coordinates js-copy-coordinates" data-coordinates="45.4348, 12.3346">
+<div class="DDPageSiderail__coordinates js-copy-coordinates" data-coordinates="40.7507, -73.9867">
 <i class="DDPageSiderail__icon atlas-svg-wrap wrap-icon-aoc-compass">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-compass" xlink:href="#icon-aoc-compass" />
 </svg>
 </i>
-45.4348, 12.3346
+40.7507, -73.9867
 <div class="DDPageSiderail__icon--copy">
 <svg height="16" viewBox="0 0 13 16" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m10.6666667.66666667h-8.00000003c-.73333334 0-1.33333334.6-1.33333334 1.33333333v9.3333333h1.33333334v-9.3333333h8.00000003zm-.6666667 2.66666666 4 4v6.66666667c0 .7333333-.6 1.3333333-1.3333333 1.3333333h-7.34000003c-.73333334 0-1.32666667-.6-1.32666667-1.3333333l.00666667-9.33333333c0-.73333334.59333333-1.33333334 1.32666666-1.33333334zm-.66666667 4.66666667h3.66666667l-3.66666667-3.66666667z" fill="#888071" transform="translate(-1)" /></svg>
 </div>
 </div>
-<a target="_blank" class="DDPageSiderail__directions-link js-link-tracked" data-category="Link to Google Maps" data-action="Clicked" data-label="Place - Sidebar Address" href="https://www.google.com/maps/search/?api=1&amp;query=Corte%20Contarina%2C%20del%20Bovolo%2C%204303%2C%20Venice%2C%2030124%2C%20Italy">
+<a target="_blank" class="DDPageSiderail__directions-link js-link-tracked" data-category="Link to Google Maps" data-action="Clicked" data-label="Place - Sidebar Address" href="https://www.google.com/maps/search/?api=1&amp;query=72%20W%2036th%20Street%2C%20New%20York%2C%20New%20York%2C%2010018%2C%20United%20States">
 View&nbsp;on&nbsp;Google&nbsp;Maps&nbsp;<i class="DDPageSiderail__external-link-icon atlas-svg-wrap wrap-icon-aoc-open-in-new">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-open-in-new" xlink:href="#icon-aoc-open-in-new" />
 </svg>
 </i>
 </a>
-<a class="DDPageSiderail__directions-link" target="_blank" href='https://www.kayak.com/in?a=kan_247383_561413&amp;url=/hotels/Venice,Italy/2022-11-14/2022-11-16/2adults'>Book a hotel on Kayak&nbsp;<i class="DDPageSiderail__external-link-icon atlas-svg-wrap wrap-icon-aoc-open-in-new">
+<a class="DDPageSiderail__directions-link" target="_blank" href='https://www.kayak.com/in?a=kan_247383_561413&amp;url=/hotels/Manhattan,New-York/2022-11-14/2022-11-16/2adults'>Book a hotel on Kayak&nbsp;<i class="DDPageSiderail__external-link-icon atlas-svg-wrap wrap-icon-aoc-open-in-new">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-open-in-new" xlink:href="#icon-aoc-open-in-new" />
 </svg>
@@ -1640,7 +1522,7 @@ View&nbsp;on&nbsp;Google&nbsp;Maps&nbsp;<i class="DDPageSiderail__external-link-
 <use href="#icon-aoc-globe" xlink:href="#icon-aoc-globe" />
 </svg>
 </i>
-<a target="_blank" href="http://www.scalacontarinidelbovolo.com">Visit Website&nbsp;<i class="DDPageSiderail__external-link-icon atlas-svg-wrap wrap-icon-aoc-open-in-new">
+<a target="_blank" href="http://www.keens.com">Visit Website&nbsp;<i class="DDPageSiderail__external-link-icon atlas-svg-wrap wrap-icon-aoc-open-in-new">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-open-in-new" xlink:href="#icon-aoc-open-in-new" />
 </svg>
@@ -1650,42 +1532,47 @@ View&nbsp;on&nbsp;Google&nbsp;Maps&nbsp;<i class="DDPageSiderail__external-link-
 </aside>
 <div class="DDPageSiderailRecirc">
 <div class="DDPageSiderailRecirc__heading">Nearby</div>
-<a href="/places/torre-dell-orologio-venice-clock-tower" class="DDPageSiderailRecirc__item">
+<a href="/places/reach-new-york" class="DDPageSiderailRecirc__item">
 <i class="DDPageSiderail__icon--large DDPageSiderail__icon atlas-svg-wrap wrap-icon-aoc-location">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-location" xlink:href="#icon-aoc-location" />
 </svg>
 </i>
 <div class="DDPageSiderailRecirc__item-text">
-<div class="DDPageSiderailRecirc__item-title">St. Mark&#39;s Clock Tower (Torre dell&#39;Orologio)</div>
-<div class="DDPageSiderailRecirc__item-distance">0.21 miles</div>
+<div class="DDPageSiderailRecirc__item-title">REACH: New York</div>
+<div class="DDPageSiderailRecirc__item-distance">0.05 miles</div>
 </div>
 </a>
-<a href="/places/monument-to-niccolo-tommaseo" class="DDPageSiderailRecirc__item">
+<a href="/places/the-new-york-herald-monument-new-york-new-york" class="DDPageSiderailRecirc__item">
 <i class="DDPageSiderail__icon--large DDPageSiderail__icon atlas-svg-wrap wrap-icon-aoc-location">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-location" xlink:href="#icon-aoc-location" />
 </svg>
 </i>
 <div class="DDPageSiderailRecirc__item-text">
-<div class="DDPageSiderailRecirc__item-title">Monument to Niccolò Tommaseo</div>
-<div class="DDPageSiderailRecirc__item-distance">0.23 miles</div>
+<div class="DDPageSiderailRecirc__item-title">New York Herald Monument</div>
+<div class="DDPageSiderailRecirc__item-distance">0.05 miles</div>
 </div>
 </a>
-<a href="/places/st-marks-lost-third-column" class="DDPageSiderailRecirc__item">
+<a href="/places/tannen-s-magic-store" class="DDPageSiderailRecirc__item">
 <i class="DDPageSiderail__icon--large DDPageSiderail__icon atlas-svg-wrap wrap-icon-aoc-location">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <use href="#icon-aoc-location" xlink:href="#icon-aoc-location" />
 </svg>
 </i>
 <div class="DDPageSiderailRecirc__item-text">
-<div class="DDPageSiderailRecirc__item-title">St. Mark&#39;s Lost Third Column</div>
-<div class="DDPageSiderailRecirc__item-distance">0.24 miles</div>
+<div class="DDPageSiderailRecirc__item-title">Tannen&#39;s Magic Shop</div>
+<div class="DDPageSiderailRecirc__item-distance">0.07 miles</div>
 </div>
 </a>
 </div>
 </div>
 <div class="DDPageSiderailAds">
+<a class="DDPageSiderailAds__house-ad non-decorated-link js-link-tracked" data-category="Cross Promotion Module" data-label="Place Ad-like Sidebar" data-action="Trips" href="/trips">
+<aside id="trips-cta-bg">
+<img style="width: 100%; height: auto;" class="lazy" data-src="https://images.atlasobscura.com/misc/app-images/travel_with_ao_v1.png" alt="">
+</aside>
+</a>
 <div class="places-siderail-ad js-siderail-ad" style="text-align: center;" styleX="text-align: center; padding: 15px 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd">
 <div class="DDP__desktop-siderail-ad">
 <div class="places-desktop-placement-htl hidden-sm hidden-xs">
@@ -1717,6 +1604,14 @@ Want to see fewer ads? <a class="" href="/membership">Become a Member</a>.
 </div>
 </div>
 <div data-component-type="recirc-places" class="vue-js-bte-place-parent hidden-print js-vue-component-wrap">
+<div class="container">
+<div class="DDP__mobile-recirc-ad">
+<a class="DDPageSiderailAds__mobile-house-ad non-decorated-link js-link-tracked" data-category="Cross Promotion Module" data-label="Place Ad-like Sidebar" data-action="Trips" href="/trips">
+<aside id="trips-cta-bg">
+<img style="width: 100%; height: auto;" class="lazy" data-src="https://images.atlasobscura.com/misc/app-images/travel_with_ao_v1.png" alt="">
+</aside>
+</a> </div>
+</div>
 <div class="athanasius">
 <div class="full-width-container CardRecircSection ">
 <div class="container">
@@ -1730,21 +1625,21 @@ Want to see fewer ads? <a class="" href="/membership">Become a Member</a>.
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="St. Mark&#39;s Clock Tower (Torre dell&#39;Orologio)" data-place-city="Venice" data-place-country="Italy" data-place-id="2824" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="REACH: New York" data-place-city="New York" data-place-country="United States" data-place-id="13569" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="2824" data-gtm-content-type="Place" data-lat="45.434702" data-lng="12.338911" data-city="Venice" data-state="Veneto" data-country="Italy" href="/places/torre-dell-orologio-venice-clock-tower">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="13569" data-gtm-content-type="Place" data-lat="40.750382" data-lng="-73.987624" data-city="New York" data-state="New York" data-country="United States" href="/places/reach-new-york">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/rPCEk7_uzUMjPPDBPi5wsCMQhH-Jkh0LWn1eXiUapAk/rs:fill:600:400:1/g:ce/c:656:437:nowe:117:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMWIx/MDZiNDFhMzE4ZmYz/NDBjY2MwNmZmYWU5/MzkxODRkMGUzMTgz/LmpwZw.jpg" alt="" data-width="777" data-height="600" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/kmPIr48jeuq_K6QudzG_1vnv_lykvA6gHC9p-9u6QqA/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jYjNm/NmIzZTNjNDA2ZTgw/ZjBfSU1HXzI2MzYu/anBn.jpg" alt="" data-width="3264" data-height="2448" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Venice, Italy</div>
+<div class="Card__hat --place">New York, New York</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>St. Mark&#39;s Clock Tower (Torre dell&#39;Orologio)</span>
+<span>REACH: New York</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-Go inside to really appreciate this 500-year-old technological masterpiece.
+Hidden in plain sight on a pair of Manhattan subway tunnels are a pair of public instruments that sing to each other.
 </div>
 </div>
 </a>
@@ -1754,21 +1649,21 @@ Go inside to really appreciate this 500-year-old technological masterpiece.
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Monument to Niccolò Tommaseo" data-place-city="Venice" data-place-country="Italy" data-place-id="30226" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="New York Herald Monument" data-place-city="New York" data-place-country="United States" data-place-id="10395" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="30226" data-gtm-content-type="Place" data-lat="45.433273" data-lng="12.33042" data-city="Venice" data-state="Veneto" data-country="Italy" href="/places/monument-to-niccolo-tommaseo">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="10395" data-gtm-content-type="Place" data-lat="40.750321" data-lng="-73.987617" data-city="New York" data-state="New York" data-country="United States" href="/places/the-new-york-herald-monument-new-york-new-york">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/YX4kfgJBRyBqilxg27t8-NOynwk9of012dUrqAQP5Pc/rs:fill:600:400:1/g:ce/c:1359:906:nowe:0:1/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82OTkw/NzdhZi00MDNmLTRj/YWUtYjU5OC1mNmNi/ZjUwM2I3ZmE1YWYx/NDE4NjI2ZDcyNTJk/MWNfOTkxOV8tX1Zl/bmV6aWFfLV9GcmFu/Y2VzY29fQmFyemFn/aGlfKDE4MzktMTg5/MilfLV9Nb251bWVu/dG9fYV9Ub21tYXNl/b18tMTg4Mi1fLV9G/b3RvX0dpb3Zhbm5p/X0RhbGwnT3J0byxf/MTItQXVnLTIwMDcu/anBn.jpg" alt="" data-width="1360" data-height="2048" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/OdTUWAtGSwWnwY9_bI73eyFGjgXo6zS_bbsjXb0Xt2w/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kZWUz/ZDc2NTA0NGU0NmFl/NDFfSU1HXzE1NTEu/SlBH.jpg" alt="" data-width="5184" data-height="3456" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Venice, Italy</div>
+<div class="Card__hat --place">New York, New York</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Monument to Niccolò Tommaseo</span>
+<span>New York Herald Monument</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-The pile of books behind the dignified writer gave the statue a most undignified nickname.
+There are owls with glowing eyes in Herald Square.
 </div>
 </div>
 </a>
@@ -1778,21 +1673,21 @@ The pile of books behind the dignified writer gave the statue a most undignified
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="St. Mark&#39;s Lost Third Column" data-place-city="Venice" data-place-country="Italy" data-place-id="24348" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="Tannen&#39;s Magic Shop" data-place-city="New York" data-place-country="United States" data-place-id="6409" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="24348" data-gtm-content-type="Place" data-lat="45.432977" data-lng="12.338798" data-city="Venice" data-state="Veneto" data-country="Italy" href="/places/st-marks-lost-third-column">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="6409" data-gtm-content-type="Place" data-lat="40.749715" data-lng="-73.986926" data-city="New York" data-state="New York" data-country="United States" href="/places/tannen-s-magic-store">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/h8QUm4yLLHoSlaFcen6aIepUho6zV9ob8D_120oze2Y/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NGIw/ZGNjNTgyYmJkMmM4/Y2RfVmVuZXppYV9w/aWF6emFfcy5NYXJj/b18yLmpwZWc.jpg" alt="" data-width="1600" data-height="1200" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/DfbJet0PREvkepqSUyASrncnJW08FQxJ-2f7ICOvJg4/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YjFi/ZThiOWQ0YTMzNWE0/OWRkYWRkMzU3YjUx/ZjYyYklNR182MDc0/LkpQRw.jpg" alt="" data-width="1600" data-height="1067" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Venice, Italy</div>
+<div class="Card__hat --place">New York, New York</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>St. Mark&#39;s Lost Third Column</span>
+<span>Tannen&#39;s Magic Shop</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-Two stone columns flank the grand Venice square, but there were supposed to be three.
+New York&#39;s oldest magic store.
 </div>
 </div>
 </a>
@@ -1802,21 +1697,21 @@ Two stone columns flank the grand Venice square, but there were supposed to be t
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Portrait of the Four Tetrarchs" data-place-city="Venice" data-place-country="Italy" data-place-id="25843" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="Macy&#39;s Wooden Escalators" data-place-city="New York" data-place-country="United States" data-place-id="18598" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="25843" data-gtm-content-type="Place" data-lat="45.43456" data-lng="12.339713" data-city="Venice" data-state="Veneto" data-country="Italy" href="/places/portrait-of-the-four-tetrarchs">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="18598" data-gtm-content-type="Place" data-lat="40.750792" data-lng="-73.989526" data-city="New York" data-state="New York" data-country="United States" href="/places/macys-wooden-escalators">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/ZC7P-x90IQYFPt2whIyXfbgW8cLWg5AV0hiYsOW6siM/rs:fill:600:400:1/g:ce/c:3456:2304:nowe:0:392/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wYzE1/MDkyNGI1ZTk0OTg5/ZmVfcDIuanBn.jpg" alt="" data-width="3456" data-height="4608" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/PPe1Va7wFUfXp2E_ppl2KOda0cFBuOBLL0-cdFeqZyo/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84MmVl/NjZkNDMwMjA0Mjc3/ZjBfMjEyMTIyNzgz/MV8xYWJhNTkzMGJk/X2IuanBn.jpg" alt="" data-width="1024" data-height="768" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Venice, Italy</div>
+<div class="Card__hat --place">New York, New York</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Portrait of the Four Tetrarchs</span>
+<span>Macy&#39;s Wooden Escalators</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-This Roman statue is missing a limb from when the Venetians stole it from Constantinople during the Crusades.
+A bit of retro transportation flair preserved in the world&#39;s largest department store.
 </div>
 </div>
 </a>
@@ -1846,21 +1741,21 @@ This Roman statue is missing a limb from when the Venetians stole it from Consta
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Tulip Stairs" data-place-city="London" data-place-country="United Kingdom" data-place-id="35501" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="Traveler Restaurant" data-place-city="Union" data-place-country="United States" data-place-id="23513" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="35501" data-gtm-content-type="Place" data-lat="51.481095" data-lng="-0.003741" data-city="London" data-state="England" data-country="United Kingdom" href="/places/tulip-stairs">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="23513" data-gtm-content-type="Place" data-lat="42.025325" data-lng="-72.139914" data-city="Union" data-state="Connecticut" data-country="United States" href="/places/traveler-restaurant">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/9x4bMZJzyTNJrQTtQ6JN_CZuyS9sfwVIQLGhV4kPro8/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mNzRi/NTFjYy1lMzM1LTQz/NzAtOTQyZC05ZGVh/OGQ1OWZjYjM2OWYx/NjM3YmUzMDM0ZmUw/NGFfdHVsaXBfc3Rh/aXJzXzYuanBn.jpg" alt="" data-width="1500" data-height="844" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/sbr7bUCxsnxtjNQ2ihFAJtglnFZtwAEtyU1bQ8A9WMk/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NWRi/Zjk1NzExOGZhODA1/MmFfSU1HXzIyMDEu/cG5n.png" alt="" data-width="4032" data-height="3024" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">London, England</div>
+<div class="Card__hat --place">Union, Connecticut</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Tulip Stairs</span>
+<span>Traveler Restaurant</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-The first geometric self-supporting spiral stairs in Britain are a truly beautiful sight.
+This small-town Connecticut restaurant gives each diner a free book from its vast library.
 </div>
 </div>
 </a>
@@ -1870,21 +1765,21 @@ The first geometric self-supporting spiral stairs in Britain are a truly beautif
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Frederiksborg Castle" data-place-city="Hillerød" data-place-country="Denmark" data-place-id="31988" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="White Rabbit Books &amp; Curiosities" data-place-city="Durango" data-place-country="United States" data-place-id="46093" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="31988" data-gtm-content-type="Place" data-lat="55.934965" data-lng="12.301272" data-city="Hillerød" data-country="Denmark" href="/places/frederiksborg-castle">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="46093" data-gtm-content-type="Place" data-lat="37.279249" data-lng="-107.879732" data-city="Durango" data-state="Colorado" data-country="United States" href="/places/white-rabbit-books-curiosities">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/vRzOCV2wnXafcbjvzgM7KyQWj1PxroT_wMZignzEG_M/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ZjBh/ZmExMC02OTc4LTQy/YmItYWZhOS02ZmFk/NWYzZTVhMTc4ZGJj/ODgyNTk0MzRiOWMx/NGFfUGFya19PZl9G/cmVkZXJpa3Nib3Jn/X0Nhc3RsZV8oMjU2/MjM3NTY1KS5qcGVn.jpg" alt="" data-width="2048" data-height="1365" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/HaZw1fDyfB_QVJy7PYo290imY1OCifJlqheUt0kg23I/rs:fill:600:400:1/g:ce/c:658:438:nowe:0:210/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84YThj/OTY5MS04NGE1LTQ4/NmItYjEzYy1kNzYy/M2EzYWMyN2EzMDc3/NjVmZDRmN2I3ODU1/MmVfUFhMXzIwMjEw/ODI3XzE2NTY1OTA2/Mi5qcGc.jpg" alt="" data-width="658" data-height="878" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Hillerød, Denmark</div>
+<div class="Card__hat --place">Durango, Colorado</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Frederiksborg Castle</span>
+<span>White Rabbit Books &amp; Curiosities</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-This striking royal residence is the largest Renaissance-style castle in Scandinavia.
+A riverside tiny house with books and other treasures galore.
 </div>
 </div>
 </a>
@@ -1894,21 +1789,21 @@ This striking royal residence is the largest Renaissance-style castle in Scandin
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Palais de l’Île " data-place-city="Annecy" data-place-country="France" data-place-id="27910" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="The Zenith" data-place-city="Pittsburgh" data-place-country="United States" data-place-id="36151" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="27910" data-gtm-content-type="Place" data-lat="45.89856" data-lng="6.127398" data-city="Annecy" data-state="Auvergne-Rhône-Alpes" data-country="France" href="/places/palais-de-lile">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="36151" data-gtm-content-type="Place" data-lat="40.426835" data-lng="-79.968985" data-city="Pittsburgh" data-state="Pennsylvania" data-country="United States" href="/places/the-zenith">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/4hJDzEkDje_2DLw1Js6t5cC3rnehxSGG92GFW6J3WFg/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wZTcy/MTRhNy05YzhiLTQ1/MjgtODk1MS0yMzI3/ZjRkZmI2YTllNWQ3/YzBlN2QyZTAzOTE4/MGRfUDEwNTAzNTUu/SlBH.jpg" alt="" data-width="4000" data-height="3000" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/YuZ3Yt21LcbZuQRmSBwZ9WQ9VTldfMXFGnNTC8TVvqE/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hMmY3/Yzg0ZS1iNTgxLTQ0/ZDAtYTJiOC04MzMy/ZWQyOTk0ZTNmOThm/YzNhNjFmMzFmMGJj/NzhfSU1HXzk4MzIu/anBn.jpg" alt="" data-width="4032" data-height="3024" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Annecy, France</div>
+<div class="Card__hat --place">Pittsburgh, Pennsylvania</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Palais de l’Île </span>
+<span>The Zenith</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-A fortified palace in the shape of a ship on the Thiou river.
+This restaurant offers a side of antiques, curios, and a bathroom chock full of owls.
 </div>
 </div>
 </a>
@@ -1918,21 +1813,21 @@ A fortified palace in the shape of a ship on the Thiou river.
 <div class="CardWrapper --PlaceWrapper js-CardWrapper ">
 <div class="CardActionBtns">
 <div class="CardActionBtns__positioner">
-<div data-item-type="Place" data-place-title="Palau Güell" data-place-city="Barcelona" data-place-country="Spain" data-place-id="45092" class="Card__action-btns vue-js-been-there-everywhere-place">
+<div data-item-type="Place" data-place-title="Central Café and Restaurant 1887" data-place-city="Budapest" data-place-country="Hungary" data-place-id="36247" class="Card__action-btns vue-js-been-there-everywhere-place">
 <been-there-everywhere></been-there-everywhere>
 </div>
 </div>
 </div>
-<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="45092" data-gtm-content-type="Place" data-lat="41.378885" data-lng="2.17424" data-city="Barcelona" data-state="Catalunya" data-country="Spain" href="/places/palau-guell">
+<a class="Card --content-card-v2 --content-card-item" data-type="Place" data-item-id="36247" data-gtm-content-type="Place" data-lat="47.492016" data-lng="19.056918" data-city="Budapest" data-state="Budapest" data-country="Hungary" href="/places/central-cafe-and-restaurant-1887">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/asTqFm8uYgri4LjRhNRwOtxUdFYY0BkUWeY4zOpsqwE/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMjE3/MDMxNC0yZjkxLTQz/ZTUtYWIwYi1mMjBi/M2FmNTMwYmVmOGI5/Yzc5MGY0N2EzZGRl/OTBfMjIzNjgyMzQ5/NzlfODBjNzMyNmNk/Zl9rLmpwZw.jpg" alt="" data-width="2048" data-height="1361" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/DlQIo9g3PN1NIrHs8K8Ci1En-1wV9nFQWYqWVswm8so/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMTY0/MzQzYi03NGI3LTQx/OTMtYWUxZi1kYmNm/YjFjZTgyOTc1NDJk/NzUwNThiY2VmY2Yz/M2ZfOTAwOTEzMjJf/ODM2ODEyODAzNDUw/MDg4XzI0NjY0Mjk4/MjE2Mjk1ODYyNTlf/bi5qcGc.jpg" alt="" data-width="1080" data-height="1350" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
-<div class="Card__hat --place">Barcelona, Spain</div>
+<div class="Card__hat --place">Budapest, Hungary</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>Palau Güell</span>
+<span>Central Café and Restaurant 1887</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-One of Antoni Gaudí’s earliest buildings, built between 1886 and 1890 for the industrialist Eusebi Güell.
+Some of the greatest minds in the history of Hungarian art and science converged in this café.
 </div>
 </div>
 </a>
@@ -1957,22 +1852,22 @@ One of Antoni Gaudí’s earliest buildings, built between 1886 and 1890 for the
 <div class="card-grid CardRecircSection__card-grid js-inject-gtm-data-in-child-links" data-gtm-category='DDP Recirc' data-gtm-action='Recirc Item Clicked' data-gtm-label='Related Content Card' data-gtm-template='DDP Footer Recirc Lists' data-gtm-recirc-association='Related Mixed Content'>
 <div class="CardWrapper js-CardWrapper">
 <div class="CardWrapper --ListWrapper js-CardWrapper ">
-<a class="Card --content-card-v2 --content-card-item Card--list" data-gtm-content-type="List" href="/lists/spectacular-spirals-list">
+<a class="Card --content-card-v2 --content-card-item Card--list" data-gtm-content-type="List" href="/lists/midtown-manhattan-secret-places">
 <figure class="Card__figure js-Card__figure --content-card-figure js-content-card-figure">
-<img data-src="https://img.atlasobscura.com/dD-WTmyFtLWZViCK8ikgJ7dur6AhTJvC1XzlX_2psvo/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNjY2/MzVkZS04NmIwLTQ4/NDMtYWFkYS0zNzJk/ZGVkOWQzY2M5YzM0/Y2E1ZDlhZTgyNGQx/ZmNfR2V0dHlJbWFn/ZXMtMTAyNDI4OTQ4/NC5qcGc.jpg" alt="" data-width="3500" data-height="2333" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
+<img data-src="https://img.atlasobscura.com/Za-dOKJF8lsnOQ67InmB7Srtk6IDiYLJ7MI7VXFhV9c/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kMWZj/NDJjYi0yMTUzLTQ1/MDMtYjE3MC03N2Qz/NzQ2ZmI4NmNjYjAy/YjI3OGM0YzU4MjA5/NTZfRFNDXzMwMDYt/MS5qcGc.jpg" alt="" data-width="2000" data-height="1331" class="lazy Card__img u-img-responsive --img-responsive --content-card-img" nopin="nopin" src="https://assets.atlasobscura.com/assets/blank-11b9c95a68e295dddd0ea924647536578ce285b2c8469a223c01df1ff3166af1.png" /></figure>
 <div class="Card__content-wrap --content-card-text">
 <div class="Card__hat">List</div>
 <h3 class="Card__heading --content-card-v2-title js-title-content">
-<span>30 of the World&#39;s Most Spectacular Spirals</span>
+<span>Even Midtown Manhattan Has Its Secrets</span>
 </h3>
 <div class="Card__content js-subtitle-content">
-Swirls and curls and whorls—with an enchanting twist.
+There are treasures hidden in plain sight in America&#39;s most commercial neighborhood.
 </div>
 <div class="Card__footer --content-card-footer">
 <div class="Card__byline-dateline --article-byline-dateline">
-<span class="Card__byline --article-byline">Kerry Wolfe</span>
+<span class="Card__byline --article-byline">Molly McBride Jacobson</span>
 <span class="Card__dateline --article-byline-date">
-January 17, 2020
+May 1, 2017
 </span>
 </div>
 </div>
@@ -1993,7 +1888,7 @@ In partnership with KAYAK
 <h2 class="geo-section-title" style="font-weight: 600;">
 Plan Your Trip
 </h2>
-<div id="kayakWidget3" data-affiliate-id="kan_247383_561413" data-country-code="US" data-language-code="en" data-location-id="place_page_bottom" data-click-id="2480_venice_italy" data-vertical="hotels" data-vertical-list="hotels,flights,cars" data-location-id="place_show" data-fill-location-from="GEOIP" data-fill-location-to="Venice Italy" data-fill-date1-days="14" data-fill-date2-days="21">
+<div id="kayakWidget3" data-affiliate-id="kan_247383_561413" data-country-code="US" data-language-code="en" data-location-id="place_page_bottom" data-click-id="108_manhattan_new_york" data-vertical="hotels" data-vertical-list="hotels,flights,cars" data-location-id="place_show" data-fill-location-from="GEOIP" data-fill-location-to="New York United States" data-fill-date1-days="14" data-fill-date2-days="21">
 </div>
 </div>
 </section>
@@ -2001,7 +1896,7 @@ Plan Your Trip
 <div class="hidden random-place-ui">
 <div class="random-place-ui-container">
 <div class="random-place-ui-text">
-  <a class="next-random detail-sm" href="/random">
+<a class="next-random detail-sm" href="/random">
 <svg class="random-place-icon" version="1.1" id="Layer_24" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26.4 26.5" style="enable-background:new 0 0 26.4 26.5;" xml:space="preserve">
 <title>Random Place Icon</title>
 <g id="New_Symbol_6">
@@ -2022,7 +1917,7 @@ Random Place <span class="link-arrow"> &raquo;</span></a></div>
 <a href="" class="random-place-ui-dismiss hidden"><span class="icon icon-cancel"></span></a>
 </div>
 </div>
-<div class="athanasius">
+ <div class="athanasius">
 <div class="full-width-container ProgrammaticMembershipCallout--taboola-member-article-container">
 <div class="container">
 <div class="ProgrammaticMembershipCallout--taboola-member-article-cta">
@@ -2448,7 +2343,7 @@ Company <i class="icon-expand_more footer-expand-arrow visible-sm visible-xs"></
 </div>
 <div id="place-map"></div>
 <div class="search-map-btns">
-<a class="js-map-show-more o-white-primary-btn" data-place-id="25425" data-show-more-page="1">Show More</a>
+<a class="js-map-show-more o-white-primary-btn" data-place-id="10394" data-show-more-page="1">Show More</a>
 </div>
 </div>
 <div class="athanasius">
@@ -2638,7 +2533,7 @@ Company <i class="icon-expand_more footer-expand-arrow visible-sm visible-xs"></
 <script>
     _qevents.push({
       qacct:"p-wCQ2x-2BzmYPY"
-      ,labels: "Section.Place.Italy.Venice,Location.Italy.Venice.Place"
+      ,labels: "Section.Place.United States.New York.New York,Location.United States.New York.New York.Place"
     });
     </script>
 <noscript>
@@ -2985,6 +2880,6 @@ Company <i class="icon-expand_more footer-expand-arrow visible-sm visible-xs"></
   </script>
 <script async src="https://cdn.nolt.io/widgets.js"></script>
 <script>window.noltQueue=window.noltQueue||[];function nolt(){noltQueue.push(arguments)}</script>
-<script>(function(){var js = "window['__CF$cv$params']={r:'764ee0a87bc1ba92',m:'fh0AhNNKulZpIpPwdi3duwAQ5PyLKbLxdezCoVLwKxI-1667580929-0-AZ1atacNxRavAj2Bvleagu55u9nnFVU8wZsIQP5qQhlDaOvcccqtzxe9B1wJrpQqE4zQ5/1yJTI8igr/OhBpUBbY1j/vKELwIzc3U1LYRm1lkO6QimGXQ8pC9625T1avzCfhEzBG+06O92ebtkL3IoecPkwOrBThDuHy0qG9zTQe',s:[0xdb391729e6,0x2d27280951],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"764ee0a87bc1ba92","token":"928b8373b6b54955be94edf603f0a236","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'764ee1760839baa5',m:'oAJiQF31yQKMfqbe1A49D396hnA2VyZEVXSkd.tWRZ4-1667580962-0-ASvgrysglaruER86mMP+2UAhqUOYqSltc6fDDKKI79wgcNoHGSxruE2acWPUy4KgHUa2cJxHT99Gs9n6jbi1WRVS4VyVfVR10EQPFR8BmHmx2nVuFG7q+3qFYK9mKjEV8puLp6D0zsvV/RVkRUukg6U=',s:[0xa029cdaee6,0x27454e0d41],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"764ee1760839baa5","token":"928b8373b6b54955be94edf603f0a236","version":"2022.11.0","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
