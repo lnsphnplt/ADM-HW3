@@ -1,0 +1,11 @@
+10 3
+Emily Morris 27 22 27
+Maria Choute 24 18 21
+Maura Lara 27 22 18
+Daniel Falgoust 28 29 24
+Henrietta Kaul 27 29 30
+Devin Lee 23 21 27
+Anne Ortega 21 24 23
+Robert Wasserman 29 28 21
+Sue Csaszar 21 25 25
+Rebecca Lachner 23 30 30
