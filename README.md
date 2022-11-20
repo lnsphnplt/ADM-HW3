@@ -1,5 +1,4 @@
 # ADM Homework 3 - Wonders of the World 
-the below is just sample for formatting
 This repositiory contains our answers to the homework questions posted on this [link](https://github.com/lucamaiano/ADM/tree/master/2022/Homework_3)
 
 _________
@@ -19,10 +18,7 @@ _________
  __`main.ipynb`__
 > Notebook containing all our code for questions 1-4, 7. The code outputs the following:
 > 	- `txt_file_urls.txt`: txt file with urls of places of first 400 pages on atlasobscura/places
-> 	- `htmls folder`: contains all the htmls and stored in groupy of 18
-> 	- `tsvs folder`: contains tsv files of extracted information for all places
 > 	- `vocabulary.csv`: processed words from all the places descriptions mapped to term_id
-> 	- `vocabulary_utf8.csv`: -"- same but in utf8 encoding, not used in final version
 >	- `termid_document.csv`: mapping of term_ids to places/their documents containing the term in their description
 >	- `termid_document_freq.csv`: -"- additional information on term frequency
 >	
@@ -37,10 +33,13 @@ __`CommandLine.sh`__
 
 > outputs `output.txt`
 
-`MyHW3.ipynb`
-> 	Notebook containing the code for question 7
-	
-`and-hw3.ipynb` 
-> 	Notebook with initial code for questions 1-3
-	
+__`.gitignore`__ 
+> files not commited to repo, only stored locally:
+> - `MyHW3.ipynb`: Notebook containing the code for question 7
+> - `main_17nov.ipynb`: Notebook with all code before implementing Elastic MapReduce in AWS
+> - `htmls folder`: contains all the htmls and stored in groupy of 18
+> - `tsvs folder`: contains tsv files of extracted information for all places
+> - `and-hw3.ipynb`:Notebook with initial code for questions 1-3
+> - `vocabulary_utf8.csv`: -"- same but in utf8 encoding, not used in final version
+
 `LICENSE`
