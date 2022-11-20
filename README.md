@@ -4,14 +4,13 @@ This repositiory contains our answers to the homework questions posted on this [
 _________
 
 ## Task
-* We scrape the sites of 7200 pages found on [Atlas Obscura](https://www.atlasobscura.com) and build a search engine based on the vocabulary found in the places description.
-* We modify our search engine to allow for scoring by additional information parameters found for the places.
+* We scrape the sites of 7200 pages found on [Atlas Obscura](https://www.atlasobscura.com) and build a search engine based on the vocabulary found in the places description
+* We modify our search engine to allow for scoring by additional information parameters found for the places
 * We display search results on a map
 
-* Commandline code to extract data on specific countries from tsv files
+* Commandline code to extract data on specific countries from previously generated tsv files
 
-* Theoretical Question on Sorting Algorithm and their Algorithms
-
+* Theoretical Question on Sorting Algorithm and their Implementation from scratch. An analysis of the text file found at [this link](https://adm2022.s3.amazonaws.com/ApplicantsInfo.txt) is carried out.
 
 ## Repository Contents
 
